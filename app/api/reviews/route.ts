@@ -5,6 +5,9 @@ import { createTransport, defaultFrom } from "@/lib/mailer";
 import { saveJSONL } from "@/lib/save";
 
 export const runtime = "nodejs";
+export const preferredRegion = ["syd1"]; // Sydney
+
+export const runtime = "nodejs";
 
 // Helper: read body as FormData if possible, else JSON
 async function readBody(req: Request): Promise<Record<string, any>> {

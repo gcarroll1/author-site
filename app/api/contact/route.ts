@@ -1,3 +1,5 @@
+export const runtime = "nodejs";
+export const preferredRegion = ["syd1"]; // Sydney
 
 import { NextResponse } from "next/server";
 import { z } from "zod";
