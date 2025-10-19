@@ -1,0 +1,11 @@
+Added/updated: lib/mailer.ts
+Added/updated: lib/save.ts
+Added/updated: app/api/contact/route.ts
+Added/updated: app/api/reviews/route.ts
+Added/updated: app/api/pre-order/route.ts
+Added/updated: app/api/advance-readers/route.ts
+Added/updated: app/order/preorder/success/page.tsx
+Added/updated: .env.example
+Patched form: app/reviews/page.tsx -> action=/api/reviews, method=POST, honeypot added
+Patched form: app/advance-readers/page.tsx -> action=/api/advance-readers, method=POST, honeypot added
+Updated .gitignore to ignore data/submissions/
