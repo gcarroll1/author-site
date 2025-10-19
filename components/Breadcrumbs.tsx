@@ -1,5 +1,6 @@
 ﻿import Link from "next/link";
 type Crumb = { name: string; href?: string };
+import type { Route } from "next";
 export default function Breadcrumbs({ items }: { items: Crumb[] }) {
   return (
     <nav aria-label="Breadcrumb" className="text-sm text-neutral-400 mb-6">
@@ -7,7 +8,7 @@ export default function Breadcrumbs({ items }: { items: Crumb[] }) {
         {items.map((c, i) => (
           <li key={i} className="flex items-center gap-1">
             {c.href ? (
-              <Link href={c.href} className="hover:text-neutral-200 underline underline-offset-4">
+              <Link href={c.href as Route} className="hover:text-neutral-200 underline underline-offset-4">
                 {c.name}
               </Link>
             ) : (

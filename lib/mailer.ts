@@ -1,6 +1,5 @@
-// lib/mailer.ts
 import nodemailer from "nodemailer";
-
+import SMTPTransport from "nodemailer/lib/smtp-transport"; // ← add this line
 export function createTransport() {
   const host = process.env.SMTP_HOST;
   const port = Number(process.env.SMTP_PORT || "587");
@@ -13,22 +12,17 @@ export function createTransport() {
 
   const usingSsl = port === 465;
 
-  return nodemailer.createTransport({
+  const options: SMTPTransport.Options = {
     host,
     port,
-    secure: usingSsl,                     // SSL if 465; otherwise STARTTLS
-    requireTLS: !usingSsl,                // force STARTTLS on 587
-    auth: {
-      user,
-      pass,
-      // Zoho sometimes rejects AUTH PLAIN on 587. Prefer LOGIN on STARTTLS.
-      method: usingSsl ? undefined : "LOGIN",
-    },
+    secure: usingSsl,            // SSL if 465
+    auth: { user, pass },
     tls: { minVersion: "TLSv1.2" },
-    // Optional debugging if you want to see SMTP dialog in your terminal:
-    // logger: true,
-    // debug: true,
-  });
+    // Only on 587, force STARTTLS and prefer LOGIN
+    ...(usingSsl ? {} : { requireTLS: true, authMethod: "LOGIN" })
+  };
+
+  return nodemailer.createTransport(options);
 }
 
 export function defaultFrom() {

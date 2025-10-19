@@ -1,5 +1,6 @@
 import Link from "next/link";
 import BookBanner from "@/components/BookBanner";
+import type { Route } from "next";
 
 export const metadata = {
   title: "Great Bookie Robbery – Melbourne’s 1976 Crime Heist | Gregory M Carroll",
@@ -58,7 +59,7 @@ export default function GBRLanding() {
 
       <section className="grid gap-4 md:grid-cols-3 mt-10">
         {parts.map((p) => (
-          <Link key={p.slug} href={`/great-bookie-robbery/${p.slug}`} className="card hover:bg-neutral-800 transition mb-3">
+          <Link key={p.slug} href={`/great-bookie-robbery/${p.slug}` as Route} className="card hover:bg-neutral-800 transition mb-3">
             <h2 className="text-lg font-semibold">{p.title}</h2>
             <p className="text-neutral-400 text-sm mt-1">Explore factual notes, images, and references.</p>
           </Link>

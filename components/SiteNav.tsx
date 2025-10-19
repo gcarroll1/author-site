@@ -1,6 +1,7 @@
 ﻿"use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import type { Route } from "next";
 
 const items = [
   { href: "/", label: "Home" },
@@ -27,7 +28,7 @@ export default function SiteNav() {
             return (
               <li key={item.href}>
                 <Link
-                  href={item.href}
+                  href={item.href as Route}
                   className={`px-3 py-1 rounded-lg transition ${
                     active
                       ? "bg-neutral-800 text-white"

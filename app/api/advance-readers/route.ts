@@ -6,7 +6,6 @@ import { saveJSONL } from "@/lib/save";
 import { first, redirectBackUrl } from "@/lib/form";
 
 export const runtime = "nodejs";
-export const runtime = "nodejs";
 export const preferredRegion = ["syd1"]; // Sydney
 
 const schema = z.object({

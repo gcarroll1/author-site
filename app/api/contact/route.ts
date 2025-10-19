@@ -1,5 +1,3 @@
-export const runtime = "nodejs";
-export const preferredRegion = ["syd1"]; // Sydney
 
 import { NextResponse } from "next/server";
 import { z } from "zod";
@@ -7,6 +5,7 @@ import { createTransport, defaultFrom } from "@/lib/mailer";
 import { saveJSONL } from "@/lib/save";
 
 export const runtime = "nodejs";
+export const preferredRegion = ["syd1"]; // Sydney
 
 const schema = z.object({
   name: z.string().min(2, "Name is required"),

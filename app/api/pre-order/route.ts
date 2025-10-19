@@ -5,7 +5,6 @@ import { createTransport, defaultFrom } from "@/lib/mailer";
 import { saveJSONL } from "@/lib/save";
 
 export const runtime = "nodejs";
-export const runtime = "nodejs";
 export const preferredRegion = ["syd1"]; // Sydney
 
 const schema = z.object({
