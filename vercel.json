@@ -1,8 +1,4 @@
 {
-  "functions": {
-    "app/**/route.{js,ts}": { "regions": ["syd1"] },
-    "api/**/*.{js,ts}": { "regions": ["syd1"] }
-  },
   "redirects": [
     {
       "source": "/:path*",
