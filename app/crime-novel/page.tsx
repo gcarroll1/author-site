@@ -40,7 +40,7 @@ export default function Page() {
       {/* Page content */}
       <div className="max-w-6xl mx-auto p-6 grid md:grid-cols-[300px,1fr] gap-8 items-start">
         {/* LEFT COLUMN — Book Cover */}
-        <div className="flex flex-col items-center md:items-start sticky top-6 self-start">
+        <div className="flex flex-col items-center md:items-start static md:sticky md:top-6 self-start">
           <img
             src="/images/11_Minutes_ebook_cover_4w.jpg"
             alt="11 Minutes book cover"
