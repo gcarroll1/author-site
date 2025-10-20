@@ -101,7 +101,7 @@ export async function POST(req: Request) {
     }
 
     // Persist (JSONL file)
-    await saveJSONL("reviews", data);
+    // await saveJSONL("reviews", data);
 
     // Email notify
     const tx = createTransport();

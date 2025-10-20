@@ -35,7 +35,7 @@ export async function POST(req: Request) {
       return NextResponse.redirect(new URL("/advance-readers/success", req.url),303);
     }
 
-    await saveJSONL("arc", data);
+    // await saveJSONL("arc", data);
 
     const tx = createTransport();
     const to = process.env.ARC_TO || process.env.CONTACT_TO || (process.env.SMTP_USER as string);

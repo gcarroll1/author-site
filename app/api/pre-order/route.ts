@@ -28,7 +28,7 @@ export async function POST(req: Request) {
       return NextResponse.redirect(new URL("/order/preorder/success", req.url),303);
     }
 
-    await saveJSONL("preorder", data);
+    // await saveJSONL("preorder", data);
 
     const tx = createTransport();
     const to = process.env.PREORDER_TO || process.env.CONTACT_TO || (process.env.SMTP_USER as string);
