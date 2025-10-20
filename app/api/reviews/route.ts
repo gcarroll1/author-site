@@ -91,7 +91,7 @@ export async function POST(req: Request) {
     const data = schema.parse(dataDraft);
 
     if (data.hp) {
-      return NextResponse.redirect(new URL("/reviews/success", req.url));
+      return NextResponse.redirect(new URL("/reviews/success", req.url),303);
     }
 
     await saveJSONL("reviews", data);
@@ -112,11 +112,11 @@ export async function POST(req: Request) {
         `\nReview:\n${data.review}`,
     });
 
-    return NextResponse.redirect(new URL("/reviews/success", req.url));
+    return NextResponse.redirect(new URL("/reviews/success", req.url),303);
   } catch {
     const ref = req.headers.get("referer");
     const u = ref ? new URL(ref) : new URL("/reviews", req.url);
     u.searchParams.set("err", "Please check your entries and try again.");
-    return NextResponse.redirect(u);
+    return NextResponse.redirect(u,303);
   }
 }

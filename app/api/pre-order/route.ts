@@ -25,7 +25,7 @@ export async function POST(req: Request) {
     });
 
     if (data.hp) {
-      return NextResponse.redirect(new URL("/order/preorder/success", req.url));
+      return NextResponse.redirect(new URL("/order/preorder/success", req.url),303);
     }
 
     await saveJSONL("preorder", data);
@@ -40,7 +40,7 @@ export async function POST(req: Request) {
       text: `Name: ${data.name}\nEmail: ${data.email}\nPreferred retailer: ${data.retailer}`,
     });
 
-    return NextResponse.redirect(new URL("/order/preorder/success", req.url));
+    return NextResponse.redirect(new URL("/order/preorder/success", req.url),303);
   } catch (err) {
     console.error(err);
     return NextResponse.json({ ok: false, error: "Server error" }, { status: 500 });

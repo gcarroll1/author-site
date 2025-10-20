@@ -32,7 +32,7 @@ export async function POST(req: Request) {
     const data = schema.parse(dataRaw);
 
     if (data.hp) {
-      return NextResponse.redirect(new URL("/advance-readers/success", req.url));
+      return NextResponse.redirect(new URL("/advance-readers/success", req.url),303);
     }
 
     await saveJSONL("arc", data);
@@ -47,10 +47,10 @@ export async function POST(req: Request) {
       text: `Name: ${data.name}\nEmail: ${data.email}\nPlatform: ${data.platform}\n\nMessage:\n${data.message}`,
     });
 
-    return NextResponse.redirect(new URL("/advance-readers/success", req.url));
+    return NextResponse.redirect(new URL("/advance-readers/success", req.url),303);
   } catch (e: any) {
     const u = redirectBackUrl(req, "/advance-readers");
     u.searchParams.set("err", "Please fill in required fields.");
-    return NextResponse.redirect(u);
+    return NextResponse.redirect(u,303);
   }
 }
