@@ -7,12 +7,27 @@
     },
     {
       "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.greatbookierobbery.com.au" }],
+      "destination": "https://gregorymcarroll.com/great-bookie-robbery"
+    },
+    {
+      "source": "/:path*",
       "has": [{ "type": "host", "value": "greatbookierobbery.au" }],
       "destination": "https://gregorymcarroll.com/great-bookie-robbery"
     },
     {
       "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.greatbookierobbery.au" }],
+      "destination": "https://gregorymcarroll.com/great-bookie-robbery"
+    },
+    {
+      "source": "/:path*",
       "has": [{ "type": "host", "value": "greatbookierobbery.com" }],
+      "destination": "https://gregorymcarroll.com/great-bookie-robbery"
+    }
+        {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.greatbookierobbery.com" }],
       "destination": "https://gregorymcarroll.com/great-bookie-robbery"
     }
   ]
