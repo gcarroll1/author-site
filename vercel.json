@@ -3,32 +3,38 @@
     {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "greatbookierobbery.com.au" }],
-      "destination": "https://gregorymcarroll.com/great-bookie-robbery"
+      "destination": "https://gregorymcarroll.com/great-bookie-robbery",
+      "permanent": true 
     },
     {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.greatbookierobbery.com.au" }],
-      "destination": "https://gregorymcarroll.com/great-bookie-robbery"
+      "destination": "https://gregorymcarroll.com/great-bookie-robbery",
+      "permanent": true 
     },
     {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "greatbookierobbery.au" }],
-      "destination": "https://gregorymcarroll.com/great-bookie-robbery"
+      "destination": "https://gregorymcarroll.com/great-bookie-robbery",
+      "permanent": true 
     },
     {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.greatbookierobbery.au" }],
-      "destination": "https://gregorymcarroll.com/great-bookie-robbery"
+      "destination": "https://gregorymcarroll.com/great-bookie-robbery",
+      "permanent": true 
     },
     {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "greatbookierobbery.com" }],
-      "destination": "https://gregorymcarroll.com/great-bookie-robbery"
+      "destination": "https://gregorymcarroll.com/great-bookie-robbery",
+      "permanent": true 
     },
     {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.greatbookierobbery.com" }],
-      "destination": "https://gregorymcarroll.com/great-bookie-robbery"
+      "destination": "https://gregorymcarroll.com/great-bookie-robbery",
+      "permanent": true 
     }
   ]
 }
