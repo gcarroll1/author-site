@@ -1,5 +1,14 @@
-export function GET(){return new Response(`User-agent: *
+// app/robots.txt/route.ts
+export function GET() {
+  return new Response(
+`User-agent: *
 Allow: /
 
-Sitemap: https://example.com/sitemap.xml
-`,{headers:{'content-type':'text/plain'}});}
+# Keep crawlers out of server actions / API endpoints
+Disallow: /api/
+
+Sitemap: https://gregorymcarroll.com/sitemap.xml
+`,
+    { headers: { "content-type": "text/plain" } }
+  );
+}

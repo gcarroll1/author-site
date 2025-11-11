@@ -4,10 +4,12 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import BookBanner from "@/components/BookBanner";
+import BookJsonLd from "@/components/BookJsonLd";
 
 export default function Page() {
   return (
     <>
+      <BookJsonLd />
       {/* JSON-LD structured data */}
       <script
         type="application/ld+json"
