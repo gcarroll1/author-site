@@ -24,7 +24,7 @@ export default function Page() {
             },
             genre: "Australian noir crime novel",
             description:
-              "11 Minutes is a gripping Australian true crime fiction novel inspired by the Great Bookie Robbery of 1976.",
+              "A gritty Australian noir crime novel inspired by Melbourne’s 1976 Great Bookie Robbery — six men, eleven minutes, and a heist gone wrong that shook the underworld.",
           }),
         }}
       />
@@ -53,22 +53,57 @@ export default function Page() {
         {/* RIGHT COLUMN — All text panels */}
         <div className="flex flex-col space-y-8">
           <header>
-            <h1 className="text-5xl font-extrabold text-orange-500 mb-4">
-              11 Minutes: A Crime Novel of Melbourne's 1976 Great Bookie Robbery
+            <h1 className="text-5xl font-extrabold text-orange-500 mb-3">
+              11 MINUTES 
             </h1>
+            <h2 className="text-3xl font-bold text-orange-500 mb-4">
+              A Crime Novel of Melbourne’s 1976 
+              <br className="hidden md:block" />
+              Great Bookie Robbery
+            </h2>
             <p className="text-lg leading-relaxed">
               by <strong>Gregory M Carroll</strong>
             </p>
           </header>
 
-          {/* About 11 Minutes panel */}
-          <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-5">
+          {/* About 11 Minutes panel — updated */}
+          <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-5 prose prose-invert max-w-none">
             <h2 className="text-2xl font-bold mb-3">About 11 Minutes</h2>
-            <p className="text-lg leading-relaxed">
-              <strong>11 Minutes</strong> is gripping Australian true crime
-              fiction that immerses you in Melbourne&apos;s gritty waterfront
-              underworld. Through alternating POVs, author Gregory M Carroll
-              deconstructs the Great Bookie Robbery of April 21, 1976.
+
+            <p><b>Six men. Eleven minutes. The perfect crime.</b></p>
+
+            <p>
+              Melbourne, 1976 – a gang of masked gunmen storm the Victoria Club and vanish
+              with what would now be worth $80 million. No one is convicted. The money is
+              never recovered. Within a decade, every man is dead.
+            </p>
+
+            <p>
+              <i>11 Minutes</i> is a <b>gritty Australian noir crime novel</b> inspired by
+              the real-life <b>Great Bookie Robbery 1976</b> – a <b>Melbourne crime fiction</b> classic
+              in the making. Told with sharp, fast prose and insider authenticity, it reveals
+              the rise and fall of the crew who pulled off Australia’s greatest
+              <b> heist gone wrong thriller</b>.
+            </p>
+
+            <p>
+              From the <b>1970s Melbourne underworld</b> to the shadowed world of crooked cops
+              and violent unions, the story dives into the <b>Painters and Dockers</b>,
+              the <b>organized crime Australia</b> tried to forget. It’s a world of loyalty,
+              betrayal, and the cost of silence — where power is fleeting, and no one walks
+              away clean.
+            </p>
+
+            <p>
+              Through the eyes of Ian Carroll’s younger brother, author <b>Gregory M Carroll</b>
+              exposes the true price of ambition in the Australian underworld.
+              He knew these men. He buried one of them.
+            </p>
+
+            <p>
+              For fans of <b>George V. Higgins</b>, <i>Don Winslow</i>, and <i>Peter Temple</i>,
+              this is <b>historical Australian crime fiction</b> at its rawest — part
+              <b> Australian true crime</b>, part moral reckoning.
             </p>
           </div>
 
@@ -87,7 +122,7 @@ export default function Page() {
             </blockquote>
 
             <blockquote className="text-xl italic text-neutral-100">
-              “A quietly devastating tale of crime, loyalty, and consequence —
+              “A quietly devastating tale of crime, loyalty, and consequence — 
               11 Minutes captures the uneasy truths of Melbourne’s underworld.”
               <span className="block mt-2 text-orange-500 font-semibold">
                 - Mark Q, ex Melbourne bookie
@@ -95,9 +130,9 @@ export default function Page() {
             </blockquote>
 
             <blockquote className="text-xl italic text-neutral-100">
-              “Your writing is perfect for this ‘vintage crime’ genre, it is a
-              fun ride, so easy to get into the characters, so much so that I
-              found myself rooting for them!!”
+              “Your writing is perfect for this ‘vintage crime’ genre — it’s a fun
+              ride, so easy to get into the characters — so much so that I found
+              myself rooting for them!”
               <span className="block mt-2 text-orange-500 font-semibold">
                 - Katrina M, School Registrar
               </span>
