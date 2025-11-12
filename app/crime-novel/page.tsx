@@ -57,9 +57,9 @@ export default function Page() {
               11 MINUTES 
             </h1>
             <h2 className="text-3xl font-bold text-orange-500 mb-4">
-              A Crime Novel of Melbourne’s 1976 
+              A Crime Novel of Melbourne’s 1976
               <br className="hidden md:block" />
-              Great Bookie Robbery
+              &nbsp;Great Bookie Robbery
             </h2>
             <p className="text-lg leading-relaxed">
               by <strong>Gregory M Carroll</strong>
