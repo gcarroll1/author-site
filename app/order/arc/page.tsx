@@ -22,13 +22,6 @@ export default function AdvanceReadersPage() {
           <li>
             Select <strong>EPUB</strong> for an Apple&nbsp;Books version.
           </li>
-          <li>
-            For the <strong>Review platform</strong>, enter your Amazon or Goodreads profile.
-          </li>
-          <li>
-            Or, if you don’t have one, select <strong>Blog</strong> and enter:&nbsp;
-            <strong>https://gregorymcarroll.com/reviews</strong>.
-          </li>
         </ul>
 
         <p className="mt-4">
