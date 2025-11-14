@@ -2,7 +2,7 @@
 import "./globals.css";
 import SiteNav from "@/components/SiteNav";
 import Script from "next/script";
-import { Analytics } from "@vercel/analytics/next"
+// import { Analytics } from "@vercel/analytics/next"
 
 export const metadata = {
   metadataBase: new URL("https://gregorymcarroll.com"),
