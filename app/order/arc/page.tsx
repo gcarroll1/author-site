@@ -19,19 +19,42 @@ export default function AdvanceReadersPage() {
         </p>
 
         <ul className="mt-4 list-disc pl-6 text-neutral-300">
-          <li>Select <strong>EPUB</strong> for an Apple&nbsp;Books version</li>
           <li>
-            For the <strong>Review platform</strong>, enter your Amazon or Goodreads profile
+            Select <strong>EPUB</strong> for an Apple&nbsp;Books version.
+          </li>
+          <li>
+            For the <strong>Review platform</strong>, enter your Amazon or Goodreads profile.
           </li>
           <li>
             Or, if you don’t have one, select <strong>Blog</strong> and enter:&nbsp;
-            <strong>https://gregorymcarroll.com/reviews</strong>
+            <strong>https://gregorymcarroll.com/reviews</strong>.
           </li>
         </ul>
 
         <p className="mt-4">
           Please commit to posting your review in <strong>early December 2025</strong>.
         </p>
+
+        <div className="mt-6 p-4 border border-neutral-700 bg-neutral-900 rounded-xl">
+          <h2 className="text-lg font-semibold text-orange-400 mb-2">
+            Need help downloading your ARC?
+          </h2>
+          <p className="text-neutral-300">
+            Due to legal requirements, the process to download a free ARC ebook is a little
+            involved. I’ve put together a short PDF guide that walks you through each step of
+            the process.
+          </p>
+          <p className="mt-2">
+            <Link
+              href="/docs/getting-arc-instructions.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-orange-400 underline hover:text-orange-300"
+            >
+              📄 Download the step-by-step ARC Instructions (PDF)
+            </Link>
+          </p>
+        </div>
       </div>
 
       <div className="grid md:grid-cols-3 gap-4">
