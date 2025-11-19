@@ -36,8 +36,6 @@
       "destination": "https://gregorymcarroll.com/great-bookie-robbery",
       "permanent": true 
     },
-
-    // NEW: redirect www.gregorymcarroll.com → gregorymcarroll.com
     {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "www.gregorymcarroll.com" }],
