@@ -35,12 +35,6 @@
       "has": [{ "type": "host", "value": "www.greatbookierobbery.com" }],
       "destination": "https://gregorymcarroll.com/great-bookie-robbery",
       "permanent": true 
-    },
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.gregorymcarroll.com" }],
-      "destination": "https://gregorymcarroll.com/:path*",
-      "permanent": true
     }
   ]
 }
