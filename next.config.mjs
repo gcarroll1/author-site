@@ -15,19 +15,8 @@ const nextConfig = {
         permanent: true,
       },
 
-      // (Optional, but safe) Ensure canonical HTTPS for the apex domain as well.
-      // Vercel usually already forces HTTP → HTTPS, but this doesn't hurt.
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'gregorymcarroll.com',
-          },
-        ],
-        destination: 'https://gregorymcarroll.com/:path*',
-        permanent: true,
-      },
+      // IMPORTANT: no redirect rule for host "gregorymcarroll.com" itself.
+      // Vercel's "primary domain" + HTTPS enforcement handles that.
     ];
   },
 };
