@@ -1,4 +1,6 @@
-﻿export default function BookBanner() {
+﻿import Link from "next/link";
+
+export default function BookBanner() {
   return (
     <div className="relative overflow-hidden bg-neutral-900 border border-neutral-800 py-4 px-6 rounded-xl mb-8">
       <div
@@ -17,16 +19,15 @@
         />
         <div className="flex-1">
           <h2 className="text-lg font-semibold drop-shadow-sm">
-            Read the story behind Australia's most daring heist <em>11 Minutes</em> by Gregory M Carroll
+            Read the story behind Australia's most daring heist{" "}
+            <em>11 Minutes</em> by Gregory M Carroll
           </h2>
-          <a
-            href="https://www.amazon.com.au/dp/B0FV1QD25H"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/order"
             className="mt-2 inline-block bg-amber-600 hover:bg-amber-700 text-white px-5 py-2 rounded-lg font-medium transition"
           >
-            Buy on Amazon
-          </a>
+            Order Now
+          </Link>
         </div>
       </div>
     </div>
