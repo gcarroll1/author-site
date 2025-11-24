@@ -75,7 +75,7 @@ export default function Page() {
               {/* Booktopia */}
               <div className="not-prose flex items-center gap-4 bg-neutral-900 border border-neutral-800 rounded-xl p-4">
                 <img
-                  src="/images/stores/booktopia.jpg"
+                  src="/images/stores/Booktopia.jpg"
                   alt="Booktopia"
                   className="w-20 h-auto rounded-sm hidden sm:block"
                   loading="lazy"

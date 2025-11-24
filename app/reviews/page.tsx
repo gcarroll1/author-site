@@ -28,7 +28,7 @@ const REVIEW_SITES = [
   {
     name: "Booktopia",
     href: "https://www.booktopia.com.au/11-minutes-gregory-m-carroll/book/9781764222600.html",
-    logoSrc: "/images/stores/booktopia.jpg",
+    logoSrc: "/images/stores/Booktopia.jpg",
     logoAlt: "Booktopia",
     description: "Share your thoughts with other Booktopia readers.",
     note: "Note: Scroll down to find the “Write a Review” section.",
