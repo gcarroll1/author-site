@@ -10,6 +10,7 @@ const items = [
   { href: "/about", label: "Author" },
   { href: "/contact", label: "Contact" },
   { href: "/order", label: "Order" },
+  { href: "/reviews", label: "Review" },
 ];
 
 export default function SiteNav() {
