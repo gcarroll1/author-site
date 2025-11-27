@@ -41,6 +41,14 @@ const REVIEW_SITES = [
     description: "Review the Kindle edition on Amazon Australia.",
     note: "Note: Amazon usually requires at least AU$50 in prior purchases to post a review.",
   },
+  {
+    name: "Google Reviews",
+    href: "https://g.page/r/CbS421zofy6AEBM/review",
+    logoSrc: "/images/stores/Google.png",
+    logoAlt: "Google Reviews",
+    description: "Review the paperback or ebook on Google.",
+    note: "",
+  },
 ];
 
 export default function Page() {
@@ -95,7 +103,7 @@ export default function Page() {
         <div className="not-prose flex justify-center mb-8">
           <img
             src="/images/11_Minutes_ebook_cover_4w.jpg"
-            alt="11 Minutes book cover"
+            alt="11 Minutes A Crime Novel of Melbourne's 1976 Great Bookie Robbery - book cover"
             className="w-72 h-auto rounded-lg shadow-lg"
           />
         </div>
