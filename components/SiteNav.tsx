@@ -11,6 +11,7 @@ const items = [
   { href: "/contact", label: "Contact" },
   { href: "/order", label: "Order" },
   { href: "/reviews", label: "Review" },
+  { href: "/media-kit", label: "Media Kit" },
 ];
 
 export default function SiteNav() {
