@@ -67,7 +67,7 @@ export default function Page() {
                 />
                 <div className="flex-1">
                   <h3 className="font-semibold text-base">
-                    Dymocks – Paperback
+                    Amazon – Paperback
                   </h3>
                   <p className="text-xs text-neutral-300">
                     Order the Australian paperback edition from Amazon (local printer).
