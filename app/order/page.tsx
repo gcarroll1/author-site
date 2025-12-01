@@ -25,6 +25,16 @@ export default function Page() {
       />
 
       <article className="prose prose-invert max-w-none">
+      <div className="relative flex items-center gap-4">
+        <img
+          src="/images/book-cover.jpg"
+          alt="11 Minutes A Crime Novel of Melbourne's 1976 Great Bookie Robbery - book cover"
+          className="w-[100px] h-auto rounded-md shadow"
+          width={100}
+          height={150}
+          loading="lazy"
+        />
+	<div>
         <h1 className="text-4xl font-extrabold text-orange-500 mb-4">
           Order 11 Minutes
         </h1>
@@ -34,6 +44,8 @@ export default function Page() {
           Robbery</em> in Australia or internationally. You can also leave a
           review once you&apos;ve read the book.
         </p>
+        </div>
+      </div>
 
         <div className="grid md:grid-cols-2 gap-6">
           {/* Australia section */}
@@ -45,11 +57,11 @@ export default function Page() {
             </p>
 
             <div className="space-y-4">
-              {/* Dymocks */}
+              {/* Amazon AU */}
               <div className="not-prose flex items-center gap-4 bg-neutral-900 border border-neutral-800 rounded-xl p-4">
                 <img
-                  src="/images/stores/dymocks.png"
-                  alt="Dymocks"
+                  src="/images/stores/amazon.png"
+                  alt="Amazon paperback"
                   className="w-20 h-auto rounded-sm hidden sm:block"
                   loading="lazy"
                 />
@@ -58,11 +70,11 @@ export default function Page() {
                     Dymocks – Paperback
                   </h3>
                   <p className="text-xs text-neutral-300">
-                    Order the Australian paperback edition from Dymocks.
+                    Order the Australian paperback edition from Amazon (local printer).
                   </p>
                 </div>
                 <Link
-                  href="https://www.dymocks.com.au/11-minutes-by-gregory-m-carroll-9781764222600"
+                  href="https://www.amazon.com.au/11-Minutes-Melbournes-Bookie-Robbery/dp/1764222601"
                   target="_blank"
                   rel="noopener noreferrer"
                   prefetch={false}
@@ -72,24 +84,24 @@ export default function Page() {
                 </Link>
               </div>
 
-              {/* Booktopia */}
+              {/* fishpond */}
               <div className="not-prose flex items-center gap-4 bg-neutral-900 border border-neutral-800 rounded-xl p-4">
                 <img
-                  src="/images/stores/Booktopia.jpg"
-                  alt="Booktopia"
+                  src="/images/stores/fishpond.png"
+                  alt="fishpond online store"
                   className="w-20 h-auto rounded-sm hidden sm:block"
                   loading="lazy"
                 />
                 <div className="flex-1">
                   <h3 className="font-semibold text-base">
-                    Booktopia – Paperback
+                    Fishpond.com.au – Paperback
                   </h3>
                   <p className="text-xs text-neutral-300">
-                    Purchase the paperback via Booktopia.
+                    Purchase the paperback via Fishpond (cheapest online price).
                   </p>
                 </div>
                 <Link
-                  href="https://www.booktopia.com.au/11-minutes-gregory-m-carroll/book/9781764222600.html"
+                  href="https://www.fishpond.com.au/Books/11-Minutes-Gregory-M-Carroll/9781764222600"
                   target="_blank"
                   rel="noopener noreferrer"
                   prefetch={false}
@@ -116,7 +128,7 @@ export default function Page() {
                   </p>
                 </div>
                 <Link
-                  href="https://books.apple.com/us/book/11-minutes/id6755410297"
+                  href="https://books.apple.com/au/book/11-minutes/id6755410297"
                   target="_blank"
                   rel="noopener noreferrer"
                   prefetch={false}
@@ -136,7 +148,7 @@ export default function Page() {
                 />
                 <div className="flex-1">
                   <h3 className="font-semibold text-base">
-                    Amazon Australia – Ebook
+                    Amazon Australia – Kindle
                   </h3>
                   <p className="text-xs text-neutral-300">
                     Find the Kindle edition on Amazon Australia.
