@@ -10,7 +10,7 @@ const items = [
   { href: "/about", label: "Author" },
   { href: "/contact", label: "Contact" },
   { href: "/order", label: "Order" },
-  { href: "/reviews", label: "Review" },
+  { href: "/reviews", label: "Reviews" },
   { href: "/media-kit", label: "Media Kit" },
 ];
 
