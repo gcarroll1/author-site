@@ -74,7 +74,7 @@ export default function Page() {
                   </p>
                 </div>
                 <Link
-                  href="https://www.amazon.com.au/11-Minutes-Melbournes-Bookie-Robbery/dp/1764222601"
+                  href="https://www.amazon.com.au/11-MINUTES-Melbournes-Bookie-Robbery/dp/1764222636"
                   target="_blank"
                   rel="noopener noreferrer"
                   prefetch={false}
@@ -191,7 +191,7 @@ export default function Page() {
                   </p>
                 </div>
                 <Link
-                  href="https://www.amazon.com/s?k=11+Minutes+Gregory+M+Carroll"
+                  href="https://www.amazon.com/11-Minutes-Melbournes-Bookie-Robbery/dp/1764222601"
                   target="_blank"
                   rel="noopener noreferrer"
                   prefetch={false}
