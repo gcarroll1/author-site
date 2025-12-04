@@ -194,9 +194,36 @@ export default function Page() {
             </div>
           </section>
 
-          {/* International section */}
+          {/* Brick & Mortar + International (right column) */}
           <section>
-            <h2 className="text-2xl font-semibold mb-3">International</h2>
+            {/* Brick & Mortar Stockists */}
+            <h2 className="text-2xl font-semibold mb-3">Brick & Mortar Stockists</h2>
+            <p className="text-neutral-300 mb-4 text-sm">
+              These independent bookshops currently stock <em>11 Minutes</em>. 
+              More stores will be added as they come on board.
+            </p>
+
+            <div className="space-y-4">
+              {/* Abbeys Bookshop – Sydney */}
+              <div className="not-prose flex items-center gap-4 bg-neutral-900 border border-neutral-800 rounded-xl p-4">
+                <img
+                  src="/images/stores/abbeys.png"
+                  alt="Abbeys Bookshop Sydney"
+                  className="w-20 h-auto rounded-sm hidden sm:block"
+                  loading="lazy"
+                />
+                <div className="flex-1">
+                  <h3 className="font-semibold text-base">Abbeys Bookshop – Sydney</h3>
+                  <p className="text-xs text-neutral-300 leading-relaxed">
+                    131 York Street, Sydney NSW 2000<br />
+                    Phone: (02) 9264 3111
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* International section */}
+            <h2 className="text-2xl font-semibold mb-3 mt-8">International</h2>
             <p className="text-neutral-300 mb-4 text-sm">
               International readers can order via Amazon in their region.
             </p>
@@ -204,7 +231,6 @@ export default function Page() {
             <div className="space-y-4">
               {/* Amazon US */}
               <div className="not-prose flex items-center gap-4 bg-neutral-900 border border-neutral-800 rounded-xl p-4">
-
                 <img
                   src="/images/stores/amazon.png"
                   alt="Amazon US"
@@ -256,18 +282,6 @@ export default function Page() {
           </section>
         </div>
 
-        {/* Write a Review card */}
-        <div className="mt-8">
-          <Link href="/reviews" className="card">
-            <div className="p-5 bg-neutral-900 border border-neutral-800 rounded-xl h-full">
-              <h3 className="font-semibold text-lg mb-1">Write a Review</h3>
-              <p className="text-sm text-neutral-300">
-                Loved (or hated) <em>11 Minutes</em>? Share your review and help
-                other readers discover the book.
-              </p>
-            </div>
-          </Link>
-        </div>
       </article>
     </>
   );
