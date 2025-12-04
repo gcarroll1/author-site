@@ -220,6 +220,23 @@ export default function Page() {
                   </p>
                 </div>
               </div>
+
+              {/* Hill of Content – Melbourne */}
+              <div className="not-prose flex items-center gap-4 bg-neutral-900 border border-neutral-800 rounded-xl p-4">
+                <img
+                  src="/images/stores/hill-of-content.png"
+                  alt="Hill of Content – Melbourne"
+                  className="w-20 h-auto rounded-sm hidden sm:block"
+                  loading="lazy"
+                />
+                <div className="flex-1">
+                  <h3 className="font-semibold text-base">Hill of Content – Melbourne CBD</h3>
+                  <p className="text-xs text-neutral-300 leading-relaxed">
+                    32 Bourke St, Melbourne VIC 3000<br />
+                    Phone: (03) 9662 9472
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* International section */}
