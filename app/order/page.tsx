@@ -111,6 +111,33 @@ export default function Page() {
                 </Link>
               </div>
 
+              {/* Booktopia */}
+              <div className="not-prose flex items-center gap-4 bg-neutral-900 border border-neutral-800 rounded-xl p-4">
+                <img
+                  src="/images/stores/Booktopia.jpg"
+                  alt="Booktopia"
+                  className="w-20 h-auto rounded-sm hidden sm:block"
+                  loading="lazy"
+                />
+                <div className="flex-1">
+                  <h3 className="font-semibold text-base">
+                    Booktopia – Paperback
+                  </h3>
+                  <p className="text-xs text-neutral-300">
+                    Purchase the paperback via Booktopia.
+                  </p>
+                </div>
+                <Link
+                  href="https://www.booktopia.com.au/11-minutes-gregory-m-carroll/book/9781764222600.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  prefetch={false}
+                  className="inline-block bg-amber-600 hover:bg-amber-700 !text-white hover:!text-white px-5 py-2 rounded-lg font-medium transition text-xs sm:text-sm"
+                >
+                  Buy
+                </Link>
+              </div>
+
               {/* Apple Books */}
               <div className="not-prose flex items-center gap-4 bg-neutral-900 border border-neutral-800 rounded-xl p-4">
                 <img
@@ -216,7 +243,7 @@ export default function Page() {
                   </p>
                 </div>
                 <Link
-                  href="https://www.amazon.co.uk/s?k=11+Minutes+Gregory+M+Carroll"
+                  href="https://www.amazon.co.uk/11-MINUTES-Melbournes-Bookie-Robbery/dp/1764222636"
                   target="_blank"
                   rel="noopener noreferrer"
                   prefetch={false}

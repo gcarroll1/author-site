@@ -72,7 +72,10 @@ export default function Page() {
 
           <div className="mt-6 flex flex-wrap gap-3">
             <Link className="btn" href="/crime-novel">
-              Read about the Crime Novel
+              The Book
+            </Link>
+            <Link className="btn" href="https://read.amazon.com.au/sample/B0FV1QD25H?clientId=share">
+              Read Sample
             </Link>
             <Link className="btn" href="/great-bookie-robbery">
               Explore True Crime

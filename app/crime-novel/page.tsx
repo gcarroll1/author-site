@@ -48,6 +48,10 @@ export default function Page() {
             alt="11 Minutes book cover"
             className="w-72 h-auto rounded-lg shadow-lg"
           />
+            <Link className="btn" href="https://read.amazon.com.au/sample/B0FV1QD25H?clientId=share">
+              Read Sample
+            </Link>
+
         </div>
 
         {/* RIGHT COLUMN — All text panels */}
