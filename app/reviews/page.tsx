@@ -116,6 +116,27 @@ export default function Page() {
         <section className="lg:col-span-3 space-y-10">
           <h2 className="text-2xl font-semibold mb-3">Professional Critiques</h2>
 
+          {/* John Silvester — The Age */}
+          <div className="bg-neutral-900 border border-neutral-800 p-6 rounded-xl">
+            <div className="flex gap-4">
+              <img
+                src="/images/the-age-logo.png"
+                alt="The Age logo"
+                className="w-20 h-auto flex-shrink-0 object-contain"
+                loading="lazy"
+              />
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold text-orange-400 mb-2">
+                  John Silvester — <em>The Age</em> (Saturday 6-Dec-2025)
+                </h3>
+                <blockquote className="italic text-neutral-300 border-l-4 border-orange-500 pl-4 mb-4">
+                  “It is a cracking read and a cunning blend of inside information, fact and imagination.”
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+
           {/* Alma Boucher */}
           <div className="bg-neutral-900 border border-neutral-800 p-6 rounded-xl">
             <div className="flex gap-4">
@@ -182,7 +203,7 @@ export default function Page() {
           </div>
 
           {/* Third Readers’ Favorite — placeholder */}
-          <div className="bg-neutral-900 border border-neutral-800 p-6 rounded-xl opacity-80 hidden">
+          <div className="bg-neutral-900 border border-neutral-800 p-6 rounded-xl">
             <div className="flex gap-4">
               <img
                 src="/images/readers-favorite-5star-seal.png"
@@ -192,34 +213,15 @@ export default function Page() {
               />
               <div className="flex-1">
                 <h3 className="text-xl font-semibold text-orange-400 mb-2">
-                  Third Readers’ Favorite Review — (Coming Soon)
+                  Inga Buccella — US Readers’ Favorite (5 Stars)
                 </h3>
-                <blockquote className="italic text-neutral-400 border-l-4 border-neutral-600 pl-4">
-                  “Full pull-quote to be added upon receipt of the third critique.”
+                <blockquote className="italic text-neutral-300 border-l-4 border-orange-500 pl-4 mb-4">
+                  “A gripping, eloquently written crime story full of grit and blood, but also heart and soul. Carroll reveals the multidimensional men behind the headlines, making 11 Minutes as compelling as Peaky Blinders or The Godfather”
                 </blockquote>
               </div>
             </div>
           </div>
 
-          {/* John Silvester — The Age */}
-          <div className="bg-neutral-900 border border-neutral-800 p-6 rounded-xl opacity-80 hidden">
-            <div className="flex gap-4">
-              <img
-                src="/images/the-age-logo.png"
-                alt="The Age logo"
-                className="w-20 h-auto flex-shrink-0 object-contain"
-                loading="lazy"
-              />
-              <div className="flex-1">
-                <h3 className="text-xl font-semibold text-orange-400 mb-2">
-                  John Silvester — <em>The Age</em> (Pending Publication)
-                </h3>
-                <blockquote className="italic text-neutral-400 border-l-4 border-neutral-600 pl-4">
-                  “Quote from Silvester’s column to be added following publication.”
-                </blockquote>
-              </div>
-            </div>
-          </div>
 
         </section>
 

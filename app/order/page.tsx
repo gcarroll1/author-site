@@ -216,7 +216,7 @@ export default function Page() {
                   <h3 className="font-semibold text-base">Abbeys Bookshop – Sydney</h3>
                   <p className="text-xs text-neutral-300 leading-relaxed">
                     131 York Street, Sydney NSW 2000<br />
-                    Phone: (02) 9264 3111
+                    Phone: <b>(02) 9264 3111</b>
                   </p>
                 </div>
               </div>
@@ -233,7 +233,7 @@ export default function Page() {
                   <h3 className="font-semibold text-base">Hill of Content – Melbourne CBD</h3>
                   <p className="text-xs text-neutral-300 leading-relaxed">
                     32 Bourke St, Melbourne VIC 3000<br />
-                    Phone: (03) 9662 9472
+                    Phone: <b>(03) 9662 9472</b>
                   </p>
                 </div>
               </div>
