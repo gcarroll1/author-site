@@ -27,7 +27,7 @@ export default function BookBanner() {
               className="w-28 md:w-32 lg:w-40 h-auto rounded shadow-xl"
             />
             <p className="mt-2 text-xs md:text-sm text-neutral-300 text-center">
-              3 × 5-Star Reviews on Reader&apos;s Favorite
+              <b>#3 in Crime–Heists releases on Amazon</b>
             </p>
           </div>
 
@@ -48,7 +48,9 @@ export default function BookBanner() {
 
             {/* Optional supporting line (you can tweak or remove) */}
             <p className="mt-3 text-sm md:text-base text-neutral-200 max-w-xl">
-              Discover the true-crime inspired heist novel behind the story.
+              <b><i>A cracking read and a cunning blend of inside information, fact and imagination. </i></b>
+	      <b>  - John Silvester, The Age</b>
+
             </p>
 
             {/* Buttons */}
