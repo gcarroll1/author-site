@@ -15,19 +15,19 @@ export default function BookBanner() {
       <div className="absolute inset-0 bg-gradient-to-r from-neutral-900/90 via-neutral-900/70 to-neutral-900/10" />
 
       {/* Content */}
-      <div className="relative px-5 py-6 md:px-8 md:py-10 lg:px-12 lg:py-12">
+      <div className="relative px-5 py-6 md:px-8 md:py-6 lg:px-12 lg:py-6">
         <div className="flex flex-col md:flex-row items-center md:items-center gap-6 md:gap-10">
           {/* Book on the left */}
           <div className="shrink-0">
             <Image
-              src="/images/11-minutes-cover.png"
-              alt="11 Minutes book cover"
-              width={140}
-              height={210}
-              className="w-28 md:w-32 lg:w-40 h-auto rounded shadow-xl"
+              src="/images/The-Age-11-Minutes-the-great-bookie-robbery.png"
+              alt="The Age 6-Dec-25 How gang pulled off heist of century"
+              width={450}
+              height={238}
+              className="h-auto rounded shadow-xl"
             />
             <p className="mt-2 text-xs md:text-sm text-neutral-300 text-center">
-              <b>#3 in Crime–Heists releases on Amazon</b>
+              <b>The True Crime behind <i>11 MINUTES</i></b>
             </p>
           </div>
 
@@ -48,8 +48,8 @@ export default function BookBanner() {
 
             {/* Optional supporting line (you can tweak or remove) */}
             <p className="mt-3 text-sm md:text-base text-neutral-200 max-w-xl">
-              <b><i>A cracking read and a cunning blend of inside information, fact and imagination. </i></b>
-	      <b>  - John Silvester, The Age</b>
+              <b><i>“A cracking read and a cunning blend of inside information, fact and imagination.”</i></b>
+	      <b>&nbsp;&nbsp;&nbsp;-&nbsp;John Silvester, The Age</b>
 
             </p>
 

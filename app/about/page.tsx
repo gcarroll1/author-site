@@ -34,13 +34,16 @@ export default function Page() {
       />
       {/* SEO: Breadcrumb JSON-LD */}
       <BreadcrumbJsonLd items={crumbs} />
-
-      <BookBanner />
-
       {/* Visible breadcrumbs */}
       <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Author" }]} />
 
+      <BookBanner />
+
       {/* Two-column layout (image left, text right) */}
+            <h1 className="text-5xl font-extrabold text-orange-500 mb-3">
+              Gregory M Carroll — Author <i>11 Minutes</i> 
+            </h1>
+
       <div className="max-w-6xl mx-auto p-6 grid md:grid-cols-[320px,1fr] gap-8 items-start">
         {/* LEFT: Author image */}
         <div className="flex flex-col items-center md:items-start sticky top-6 self-start">
