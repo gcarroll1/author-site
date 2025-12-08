@@ -1,6 +1,7 @@
 ﻿import Breadcrumbs from "@/components/Breadcrumbs";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Link from "next/link";
+import { AmazonRankingHighlight } from "@/components/AmazonRankingHighlight";
 
 export const metadata = {
   title: "Order | 11 Minutes",
@@ -46,6 +47,9 @@ export default function Page() {
         </p>
         </div>
       </div>
+
+      {/* NEW AMAZON HOT NEW RELEASES IMAGE */}
+      <AmazonRankingHighlight />
 
         <div className="grid md:grid-cols-2 gap-6">
           {/* Australia section */}

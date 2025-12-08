@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import { AmazonRankingHighlight } from "@/components/AmazonRankingHighlight";
 
 export const metadata = {
   title: "Write a Review | 11 Minutes",
@@ -91,6 +92,7 @@ export default function Page() {
       {/* HERO TEXT + BANNER */}
       <div className="text-center mb-10">
 
+      {/* OLD BANNER 
         <div className="w-full flex justify-center mb-6">
           <img
             src="/images/reviews-stars-banner.png"
@@ -98,6 +100,10 @@ export default function Page() {
             className="w-4/5 h-auto mx-auto"
           />
         </div>
+      */}
+
+      {/* NEW AMAZON HOT NEW RELEASES IMAGE */}
+      <AmazonRankingHighlight />
 
         <h1 className="text-4xl font-extrabold text-orange-500 mt-2">
           Reviews &amp; Critical Response
