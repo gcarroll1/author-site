@@ -2,13 +2,13 @@
 import GalleryFigure from "@/components/GalleryFigure";
 
 const KW = [
-  "Great Bookie Robbery",
-  "Australian noir heist novel",
-  "Melbourne 1976 crime gangs",
-  "True crime unsolved",
-  "Ray Chuck Bennett",
-  "Ian Carroll",
-  "Painters and Dockers waterfront wars",
+  "australian crime novel true story",
+  "melbourne gangland history",
+  "1970s organised crime australia",
+  "australian noir thriller",
+  "true crime fiction australian heist",
+  "books like underbelly true crime",
+  "gritty crime novel based on true events",
   "11 Minutes",
   "A Crime novel",
   "Gregory M Carroll",
