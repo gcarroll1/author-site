@@ -197,10 +197,6 @@ export default function BookBanner() {
                 </div>
               </div>
 
-              <p className="mt-3 text-xs md:text-sm text-neutral-400">
-                Tip: when Part 2 is live, set <b>part2Live</b> to <b>true</b> in
-                this component.
-              </p>
             </div>
           </div>
         </div>
