@@ -60,10 +60,10 @@ export default function BookBanner() {
 
   const part2Apple =
     "https://podcasts.apple.com/au/podcast/the-bookie-robbers-brother-part-2/id1260800644?i=1000746399694";
-  const part2Spotify = spotifyUriToWeb("spotify:episode:76Jeao9SKYXjrHsRJWOMXe");
+  const part2Spotify = "https://open.spotify.com/episode/1RIyS8TQgOY4K6J8Jvx4CM";
 
   // Part 2 not available yet (set to true next week when live)
-  const part2Live = false;
+  const part2Live = true;
 
   return (
     <div className="relative overflow-hidden border border-neutral-800 rounded-xl mb-8 bg-neutral-900">
