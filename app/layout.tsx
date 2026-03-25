@@ -2,7 +2,8 @@
 import "./globals.css";
 import SiteNav from "@/components/SiteNav";
 import Script from "next/script";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
+import FloatingCTA from "@/components/FloatingCTA";
 
 export const metadata = {
   metadataBase: new URL("https://gregorymcarroll.com"),
@@ -20,7 +21,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className="bg-black text-neutral-100">
         <SiteNav />
-        <main className="mx-auto max-w-6xl px-4 py-8">{children}</main>
+
+        <main className="mx-auto max-w-6xl px-4 py-8">
+          {children}
+        </main>
+
+        {/* 🔥 Floating CTA (global, sits above everything) */}
+        <FloatingCTA />
+
+        {/* Analytics */}
+        <Analytics />
 
         {/* Author JSON-LD (site-wide) */}
         <Script
@@ -33,11 +43,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@type": "Person",
               name: "Gregory M Carroll",
               url: "https://gregorymcarroll.com",
-              image: "https://gregorymcarroll.com/images/author.jpg", // 
+              image: "https://gregorymcarroll.com/images/author.jpg",
               sameAs: [
-                "https://www.amazon.com/author/gregorymcarroll", // ← update
-                "https://www.goodreads.com/author/show/175339915-gregory-m-carroll", // ← replace with your Goodreads author ID
-                "https://www.facebook.com/gregorymcarrollauthor", // ← update
+                "https://www.amazon.com/author/gregorymcarroll",
+                "https://www.goodreads.com/author/show/175339915-gregory-m-carroll",
+                "https://www.facebook.com/gregorymcarrollauthor",
                 "https://greatbookierobbery.com",
               ],
               jobTitle: "Author",

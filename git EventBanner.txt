@@ -1,0 +1,6 @@
+git add components/EventBanner.tsx components/TopBanner.tsx components/SiteNav.tsx components/FloatingCTA.tsx components/ProofStrip.tsx components/AmazonRankingHighlight.tsx
+
+git add app/layout.tsx app/page.tsx app/great-bookie-robbery-50th-anniversary/page.tsx  app/about/page.tsx app/great-bookie-robbery/page.tsx app/reviews/page.tsx
+
+
+git add app/api/contact/route.ts

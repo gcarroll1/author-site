@@ -1,7 +1,9 @@
+// app/reviews/page.tsx
+
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
-import { AmazonRankingHighlight } from "@/components/AmazonRankingHighlight";
+import ProofStrip from "@/components/ProofStrip";
 
 export const metadata = {
   title: "Write a Review | 11 Minutes",
@@ -76,17 +78,11 @@ export default function Page() {
         }}
       />
 
-      {/* Breadcrumb JSON-LD */}
-      <BreadcrumbJsonLd items={crumbs} />
-
-      {/* Breadcrumbs UI */}
-      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Reviews" }]} />
-
       <article className="prose prose-invert max-w-none">
+        <ProofStrip />
         {/* HERO */}
         <div className="text-center mb-10">
           {/* AMAZON HOT NEW RELEASES IMAGE */}
-          <AmazonRankingHighlight />
 
           <h1 className="text-4xl font-extrabold text-orange-500 mt-2">
             Reviews &amp; Critical Response

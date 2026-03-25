@@ -1,4 +1,4 @@
-
+// api/contact/route.ts
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { createTransport, defaultFrom } from "@/lib/mailer";
@@ -24,23 +24,46 @@ export async function POST(req: Request) {
       hp: String(form.get("hp") || ""),
     });
 
+    const isEvent = data.message.includes("Event booking");
+
     if (data.hp) {
-      return NextResponse.redirect(new URL("/contact?ok=1", req.url));
+      return NextResponse.redirect(
+        new URL(
+          isEvent
+            ? "/great-bookie-robbery-50th-anniversary?sent=1"
+            : "/contact?sent=1",
+          req.url
+        )
+      );
     }
 
-    await saveJSONL("contact", { name: data.name, email: data.email, message: data.message });
+    await saveJSONL("contact", {
+      name: data.name,
+      email: data.email,
+      message: data.message,
+    });
 
     const tx = createTransport();
     const to = process.env.CONTACT_TO || (process.env.SMTP_USER as string);
+
     await tx.sendMail({
       from: defaultFrom(),
       to,
       replyTo: data.email,
-      subject: "New contact message — Author site",
+      subject: isEvent
+        ? "Event Booking — 21 April 2026"
+        : "New contact message — Author site",
       text: `Name: ${data.name}\nEmail: ${data.email}\n\n${data.message}`,
     });
 
-    return NextResponse.redirect(new URL("/contact?sent=1", req.url));
+    return NextResponse.redirect(
+      new URL(
+        isEvent
+          ? "/great-bookie-robbery-50th-anniversary?sent=1"
+          : "/contact?sent=1",
+        req.url
+      )
+    );
   } catch (err) {
     console.error(err);
     return NextResponse.json({ ok: false, error: "Server error" }, { status: 500 });

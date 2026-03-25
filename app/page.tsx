@@ -1,4 +1,6 @@
-﻿import BookBanner from "@/components/BookBanner";
+﻿// Home Page app/page.tsx 
+
+import TopBanner from "@/components/TopBanner";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Link from "next/link";
 
@@ -23,7 +25,7 @@ export default function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
       />
       <BreadcrumbJsonLd items={crumbs} />
-      <BookBanner />
+      <TopBanner />
 
       <section className="grid md:grid-cols-2 gap-8 items-start">
         <div>

@@ -1,3 +1,5 @@
+// app/great-bookie-robbery/page.tsx
+
 import Link from "next/link";
 import BookBanner from "@/components/BookBanner";
 import type { Route } from "next";
@@ -47,7 +49,7 @@ export default function GBRLanding() {
         <h1 className="text-5xl font-extrabold text-orange-500 mb-4">Great Bookie Robbery</h1>
         <p className="text-lg leading-relaxed">
           On 21 April 1976, six men carried out one of the most audacious heists in Australian history.
-          The Great Bookie Robbery targeted the Victoria Club in Melbourne, stealing an estimated $15 million
+          The Great Bookie Robbery targeted the Victoria Club in Melbourne, stealing an estimated $11 million
           (≈ $80M today). No one was ever convicted. Within a decade, every man was dead.
         </p>
         <p>

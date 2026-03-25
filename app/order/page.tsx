@@ -1,7 +1,9 @@
-﻿import Breadcrumbs from "@/components/Breadcrumbs";
+﻿// app/order/page.tsx
+
+import Breadcrumbs from "@/components/Breadcrumbs";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Link from "next/link";
-import { AmazonRankingHighlight } from "@/components/AmazonRankingHighlight";
+import ProofStrip from "@/components/ProofStrip";
 
 export const metadata = {
   title: "Order | 11 Minutes",
@@ -17,15 +19,9 @@ export default function Page() {
 
   return (
     <>
-      <BreadcrumbJsonLd items={crumbs} />
-      <Breadcrumbs
-        items={[
-          { name: "Home", href: "/" },
-          { name: "Order" },
-        ]}
-      />
-
       <article className="prose prose-invert max-w-none">
+      {/* NEW AMAZON HOT NEW RELEASES IMAGE */}
+      <ProofStrip />
       <div className="relative flex items-center gap-4">
         <img
           src="/images/book-cover.jpg"
@@ -47,9 +43,6 @@ export default function Page() {
         </p>
         </div>
       </div>
-
-      {/* NEW AMAZON HOT NEW RELEASES IMAGE */}
-      <AmazonRankingHighlight />
 
         <div className="grid md:grid-cols-2 gap-6">
           {/* Australia section */}

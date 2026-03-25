@@ -1,7 +1,10 @@
-﻿import Link from "next/link";
+﻿// app/about/page.tsx
+
+import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
-import BookBanner from "@/components/BookBanner";
+import TopBanner from "@/components/TopBanner";
+
 
 export const metadata = {
   title: "Author — Gregory M Carroll | 11 Minutes",
@@ -40,7 +43,7 @@ export default function Page() {
       <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Author" }]} />
 
       {/* Book banner */}
-      <BookBanner />
+      <TopBanner />
 
       <main className="max-w-6xl mx-auto px-4 py-8 space-y-12">
         {/* PAGE TITLE */}
