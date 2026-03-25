@@ -3,7 +3,6 @@ import "./globals.css";
 import SiteNav from "@/components/SiteNav";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
-import FloatingCTA from "@/components/FloatingCTA";
 
 export const metadata = {
   metadataBase: new URL("https://gregorymcarroll.com"),
@@ -25,9 +24,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="mx-auto max-w-6xl px-4 py-8">
           {children}
         </main>
-
-        {/* 🔥 Floating CTA (global, sits above everything) */}
-        <FloatingCTA />
 
         {/* Analytics */}
         <Analytics />
