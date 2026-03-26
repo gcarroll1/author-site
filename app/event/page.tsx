@@ -2,7 +2,7 @@
 
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
-const BOOKING_URL = "https://redspiceroad.com/whats-on/";
+const BOOKING_URL = "https://square.link/u/OnY09nSQ?src=embed";
 
 export const metadata = {
   title: "Event | The Great Bookie Robbery 50th Anniversary",
