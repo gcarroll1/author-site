@@ -33,7 +33,7 @@ export default function AnniversaryEditionPage() {
 
           <div className="bg-neutral-900 border border-neutral-700 rounded-lg p-5 mb-6">
             <p className="text-xl font-semibold mb-2">
-              Special Event Price: <span className="text-amber-400">$30</span>
+              Special Event Price: <span className="text-amber-400">$30 +gst</span>
             </p>
             <p className="text-sm text-gray-400">
               (Limited to event attendees only)
