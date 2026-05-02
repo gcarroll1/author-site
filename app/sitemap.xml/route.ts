@@ -8,6 +8,8 @@ const ROUTES = [
   "/advance-readers",
   "/advance-readers/success",
   "/contact",
+  "/event",
+  "/media-kit",
   "/crime-novel",
   "/great-bookie-robbery",
   "/great-bookie-robbery/prologue",
