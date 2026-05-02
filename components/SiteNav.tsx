@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 // components/SiteNav.tsx
 
@@ -8,22 +8,14 @@ import type { Route } from "next";
 
 const items = [
   { href: "/", label: "Home" },
-
-  // 🔥 EVENT – inserted high priority
-  {
-    //href: "/great-bookie-robbery-50th-anniversary",
-    href: "/event",
-    label: "EVENT – 21 APRIL",
-    highlight: true,
-  },
-
   { href: "/crime-novel", label: "Crime Novel" },
   { href: "/great-bookie-robbery", label: "True Crime" },
   { href: "/about", label: "Author" },
+  { href: "/event", label: "50 Anniversary" },
   { href: "/contact", label: "Contact" },
   { href: "/order", label: "Order" },
   { href: "/reviews", label: "Reviews" },
-  { href: "/media-kit", label: "Media Kit" },
+  { href: "/media-kit", label: "Media" },
 ];
 
 export default function SiteNav() {
@@ -42,18 +34,12 @@ export default function SiteNav() {
               pathname === item.href ||
               (item.href !== "/" && pathname.startsWith(item.href));
 
-            const isEvent = (item as any).highlight;
-
             return (
               <li key={item.href}>
                 <Link
                   href={item.href as Route}
                   className={`px-3 py-1 rounded-lg transition font-medium ${
-                    isEvent
-                      ? active
-                        ? "bg-red-700 text-white"
-                        : "bg-red-600 text-white hover:bg-red-700 shadow-md"
-                      : active
+                    active
                       ? "bg-neutral-800 text-white"
                       : "text-neutral-300 hover:text-white hover:bg-neutral-900"
                   }`}

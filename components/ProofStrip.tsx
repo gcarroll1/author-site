@@ -61,7 +61,7 @@ export default function ProofStrip() {
           </div>
 
           <p className="mt-3 text-xs text-neutral-400">
-            Screenshot captured 6 December 2025
+            As at 28 Nov 2026
           </p>
         </div>
 

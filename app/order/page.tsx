@@ -234,6 +234,24 @@ export default function Page() {
                   </p>
                 </div>
               </div>
+
+              {/* Avenue Bookstores – Melbourne */}
+              <div className="not-prose flex items-center gap-4 bg-neutral-900 border border-neutral-800 rounded-xl p-4">
+                <img
+                  src="/images/stores/avenue-bookstore.png"
+                  alt="Avenue Bookstores – Melbourne"
+                  className="w-20 h-auto rounded-sm hidden sm:block"
+                  loading="lazy"
+                />
+                <div className="flex-1">
+                  <h3 className="font-semibold text-base">Avenue Bookstores – Melbourne</h3>
+                  <p className="text-xs text-neutral-300 leading-relaxed">
+                    Albert Park, Elsternwick, Richmond<br />
+                    Phone: <b>(03) 9690 2227</b>
+                  </p>
+                </div>
+              </div>
+
             </div>
 
             {/* International section */}

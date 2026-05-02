@@ -62,6 +62,58 @@ export default function MediaKitPage() {
 
       {/* Main content */}
       <main className="bg-black text-neutral-100">
+
+        {/* Media coverage */}
+        <section className="max-w-6xl mx-auto px-6 pt-10 md:pt-14">
+          <div className="bg-neutral-900/80 border border-neutral-800 rounded-xl p-5 md:p-6">
+            <p className="text-sm font-semibold tracking-[0.25em] text-orange-400 uppercase mb-2">
+              In the media
+            </p>
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
+              Press, podcasts, and television coverage
+            </h3>
+            <p className="text-neutral-200 max-w-3xl mb-6">
+              Coverage of <span className="italic">11 Minutes</span>, the real Great Bookie Robbery, and Gregory M Carroll&apos;s personal connection to Melbourne&apos;s 1976 crime of the century.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-4">
+              <article className="rounded-xl border border-neutral-700 bg-black/30 p-5 flex flex-col">
+                <p className="text-xs tracking-[0.22em] uppercase text-orange-300 mb-2">Print feature</p>
+                <h4 className="text-xl font-bold text-white mb-2">The Age — John Silvester</h4>
+                <p className="text-sm text-neutral-200 flex-1">
+                  Weekend <span className="italic">Naked City</span> crime feature on the true story behind <span className="italic">11 Minutes</span> and Melbourne&apos;s Great Bookie Robbery.
+                </p>
+                <a href="https://edition.theage.com.au/shortcode/THE965/edition/bb140e08-98b0-3c56-276d-76f14aebacec?page=4ec43ee8-dc16-fd23-82ae-e5755ee2bfdb&" target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center justify-center rounded-lg border border-orange-400/70 px-4 py-2 text-sm font-semibold text-orange-200 hover:bg-orange-500/10 transition">
+                  Read The Age feature
+                </a>
+              </article>
+
+              <article className="rounded-xl border border-neutral-700 bg-black/30 p-5 flex flex-col">
+                <p className="text-xs tracking-[0.22em] uppercase text-orange-300 mb-2">Podcast interview</p>
+                <h4 className="text-xl font-bold text-white mb-2">Andrew Rule — Life and Crimes</h4>
+                <p className="text-sm text-neutral-200 flex-1">
+                  A two-part interview unpacking the robbery, the men behind it, and the lived history that shaped <span className="italic">11 Minutes</span>.
+                </p>
+                <div className="mt-4 grid grid-cols-1 gap-2">
+                  <a href="https://podcasts.apple.com/au/podcast/the-bookie-robbers-brother-part-1/id1260800644?i=1000745494694" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-lg border border-orange-400/70 px-4 py-2 text-sm font-semibold text-orange-200 hover:bg-orange-500/10 transition">Part 1 — Apple Podcasts</a>
+                  <a href="https://open.spotify.com/episode/76Jeao9SKYXjrHsRJWOMXe" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-lg border border-neutral-500 px-4 py-2 text-sm font-semibold text-neutral-100 hover:bg-white/10 transition">Part 1 — Spotify</a>
+                  <a href="https://podcasts.apple.com/au/podcast/the-bookie-robbers-brother-part-2/id1260800644?i=1000746399694" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-lg border border-orange-400/70 px-4 py-2 text-sm font-semibold text-orange-200 hover:bg-orange-500/10 transition">Part 2 — Apple Podcasts</a>
+                  <a href="https://open.spotify.com/episode/1RIyS8TQgOY4K6J8Jvx4CM" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-lg border border-neutral-500 px-4 py-2 text-sm font-semibold text-neutral-100 hover:bg-white/10 transition">Part 2 — Spotify</a>
+                </div>
+              </article>
+
+              <article className="rounded-xl border border-neutral-700 bg-black/30 p-5 flex flex-col">
+                <p className="text-xs tracking-[0.22em] uppercase text-orange-300 mb-2">TV news</p>
+                <h4 className="text-xl font-bold text-white mb-2">9 News Melbourne — 9Now</h4>
+                <p className="text-sm text-neutral-200 flex-1">
+                  Channel 9 coverage of the 50th anniversary presentation, filmed at the original crime scene on the anniversary of the Great Bookie Robbery.
+                </p>
+                <p className="mt-3 text-xs text-neutral-400">To view on 9Now, register for a free account. No subscription is required.</p>
+                <a href="https://www.9now.com.au/9news-melbourne/season-2026/episode-116" target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center justify-center rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-black hover:bg-orange-400 transition">Watch on 9Now</a>
+              </article>
+            </div>
+          </div>
+        </section>
         <div className="max-w-6xl mx-auto px-6 py-10 md:py-14 grid md:grid-cols-[1.1fr,0.9fr] gap-8 items-start">
           {/* LEFT COLUMN */}
           <section className="space-y-6">
