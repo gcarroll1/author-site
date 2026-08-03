@@ -5,6 +5,9 @@ const CANONICAL = "https://gregorymcarroll.com";
 const ROUTES = [
   "/", 
   "/about",
+  "/books",
+  "/books/11-million",
+  "/books/11-minutes",
   "/advance-readers",
   "/advance-readers/success",
   "/contact",
