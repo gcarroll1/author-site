@@ -1,4 +1,4 @@
-﻿// app/layout.tsx
+// app/layout.tsx
 import "./globals.css";
 import SiteNav from "@/components/SiteNav";
 import Script from "next/script";
@@ -9,9 +9,6 @@ export const metadata = {
   title: {
     default: "Gregory M Carroll",
     template: "%s | Gregory M Carroll",
-  },
-  alternates: {
-    canonical: "/",
   },
 };
 

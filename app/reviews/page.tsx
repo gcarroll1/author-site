@@ -6,10 +6,14 @@ import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import ProofStrip from "@/components/ProofStrip";
 
 export const metadata = {
-  title: "Write a Review | 11 Minutes",
+  title: "Book Reviews | Gregory M Carroll",
   description:
-    "Leave a review for 11 Minutes on Goodreads, Dymocks, Booktopia, Amazon, or Google Reviews.",
+    "Read critical responses and leave a review for 11 Minutes or 11 Million by Gregory M Carroll.",
 };
+
+
+const ELEVEN_MILLION_GOODREADS =
+  "https://www.goodreads.com/book/show/255927441-11-million";
 
 const REVIEW_SITES = [
   {
@@ -89,9 +93,8 @@ export default function Page() {
           </h1>
 
           <p className="text-neutral-300 mt-2 max-w-3xl mx-auto">
-            If you enjoyed <em>11 Minutes</em>, a review is the single best way to help
-            new readers find the book. It doesn’t need to be long — even{" "}
-            <strong>one sentence</strong> makes a difference.
+            Reviews help new readers discover both <em>11 Minutes</em> and <em>11 Million</em>.
+            They don’t need to be long — even <strong>one sentence</strong> makes a difference.
           </p>
 
           <p className="text-neutral-400 mt-3 max-w-3xl mx-auto text-sm">
@@ -105,6 +108,24 @@ export default function Page() {
             </em>
           </p>
         </div>
+
+        <section className="not-prose mb-10 rounded-2xl border border-amber-600/60 bg-neutral-900 p-6 shadow-lg md:flex md:items-center md:justify-between md:gap-8">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-500">New book</p>
+            <h2 className="mt-1 text-2xl font-bold text-white">Review or add <em>11 Million</em> on Goodreads</h2>
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-neutral-300">
+              Goodreads readers can add the book to their shelves now and leave a rating or review.
+            </p>
+          </div>
+          <a
+            href={ELEVEN_MILLION_GOODREADS}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-flex shrink-0 items-center justify-center rounded-lg bg-amber-600 px-5 py-3 font-semibold text-white transition hover:bg-amber-700 md:mt-0"
+          >
+            Add Review for 11 Million
+          </a>
+        </section>
 
         {/* TWO COLUMN LAYOUT */}
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10">
@@ -228,7 +249,7 @@ export default function Page() {
 
           {/* RIGHT COLUMN — WRITE A REVIEW */}
           <section className="lg:col-span-2 space-y-6">
-            <h2 className="text-2xl font-semibold mb-3">Where to Leave Your Review</h2>
+            <h2 className="text-2xl font-semibold mb-3">Review 11 Minutes</h2>
 
             <p className="text-neutral-300 text-sm mb-4">
               Choose your favourite platform below. If you’re short on time, a quick rating

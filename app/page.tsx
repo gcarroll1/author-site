@@ -1,155 +1,94 @@
-﻿// Home Page app/page.tsx 
-
-import TopBanner from "@/components/TopBanner";
-import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Link from "next/link";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata = {
-  title: "Gregory M Carroll — 11 Minutes | Home",
+  title: "Australian Crime Novels",
   description:
-    "Gregory M Carroll — author of 11 MINUTES, a crime novel of Melbourne’s 1976 Great Bookie Robbery.",
+    "Discover 11 Million and 11 Minutes, Gregory M Carroll's Australian crime novels inspired by Melbourne's Great Bookie Robbery.",
 };
 
-export default function Page() {
-  const crumbs = [{ name: "Home", url: "https://gregorymcarroll.com/" }];
-  const articleLd = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    name: "Home — Gregory M Carroll",
-  };
+const books = [
+  {
+    title: "11 Million",
+    subtitle: "The Great Bookie Robbery Money",
+    image: "/images/books/11-million-cover.png",
+    href: "/books/11-million",
+    status: "Pre-order now",
+    copy: "The robbery lasted eleven minutes. The missing fortune has been killing men ever since.",
+  },
+  {
+    title: "11 Minutes",
+    subtitle: "A Crime Novel of Melbourne's 1976 Great Bookie Robbery",
+    image: "/images/11_Minutes_ebook_cover_4w.jpg",
+    href: "/books/11-minutes",
+    status: "Available now",
+    copy: "Six men. Eleven minutes. The perfect crime—and the violent legacy it left behind.",
+  },
+];
 
+export default function HomePage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
-      />
-      <BreadcrumbJsonLd items={crumbs} />
-      <TopBanner />
+      <BreadcrumbJsonLd items={[{ name: "Home", url: "https://gregorymcarroll.com/" }]} />
 
-      <section className="grid md:grid-cols-2 gap-8 items-start">
-        <div>
-          {/* Headings */}
-          <h1 className="text-5xl font-extrabold text-orange-500 mb-2">
-            Gregory M Carroll
-          </h1>
-          <h2 className="text-3xl font-bold text-neutral-100">11 Minutes</h2>
-          <h3 className="text-xl font-semibold text-neutral-300 mb-6">
-            A Crime Novel of Melbourne&rsquo;s 1976 Great Bookie Robbery
-          </h3>
+      <section className="overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-950 px-6 py-12 md:px-12 md:py-16">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-amber-500">
+          Gregory M Carroll · Australian crime author
+        </p>
+        <h1 className="max-w-4xl text-4xl font-extrabold leading-tight md:text-6xl">
+          The robbery took eleven minutes. The consequences lasted a lifetime.
+        </h1>
+        <p className="mt-6 max-w-3xl text-lg leading-relaxed text-neutral-300 md:text-xl">
+          Two crime novels inspired by Melbourne&apos;s 1976 Great Bookie Robbery—one following the men who stole the money, the other imagining where the missing millions went.
+        </p>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <Link className="btn" href="/books/11-million">Pre-order 11 Million</Link>
+          <Link className="btn-secondary" href="/great-bookie-robbery">Explore the true story</Link>
+        </div>
+      </section>
 
-          {/* Core hook */}
-          <p className="text-2xl font-bold mb-6">
-            Six men. Eleven minutes. The perfect crime.
-          </p>
-
-          {/* Main pitch copy */}
-          <p className="text-lg leading-relaxed">
-            <strong>11 MINUTES</strong> tells the untold story behind
-            Melbourne&rsquo;s 1976 Great Bookie Robbery&mdash;Australia&rsquo;s
-            greatest armed heist. On an ordinary Wednesday morning, six masked
-            men stormed the Victoria Club and vanished with what would now be
-            worth $80 million. No one was convicted. The money was never found.
-            Within a decade, every man was dead.
-          </p>
-
-          <p className="text-lg leading-relaxed mt-4">
-            Told by someone who knew the men involved&mdash;including his own
-            brother&mdash;this Australian noir crime novel blends meticulous
-            research with cinematic prose. It explores loyalty, betrayal, and
-            the human cost of ambition in Melbourne&rsquo;s gritty underworld.
-          </p>
-
-          <p className="text-lg leading-relaxed mt-4">
-            The crew is forged in the Painters &amp; Dockers Waterfront War that
-            leaves more than forty dead. After the robbery, enemies close in:
-            not just the police Task Force, but Sydney&rsquo;s Toecutters and
-            Australia&rsquo;s Krays, the Kane brothers. Everyone wants a piece.
-            The old warning rings true&mdash;be careful what you wish for.
-          </p>
-
-          <p className="text-lg leading-relaxed mt-4">
-            This book is not straight true crime. It&apos;s something deeper.
-            Facts tell you what happened. A novel lets you feel it.{" "}
-            <strong>11 MINUTES</strong> reaches past police reports and
-            courtrooms into quiet fears, the slow unravelling of loyalty, and
-            the weight of choices made. It shows not just what people did, but
-            why.
-          </p>
-
-          {/* Why readers love section */}
-          <div className="mt-6">
-            <h4 className="text-lg font-semibold text-neutral-100 mb-2">
-              Why crime readers love <em>11 MINUTES</em>
-            </h4>
-            <ul className="list-disc list-inside space-y-1 text-sm md:text-base text-neutral-200">
-              <li>
-                Based on the real 1976 Great Bookie Robbery, Australia&rsquo;s
-                most audacious armed heist.
-              </li>
-              <li>
-                Written by the younger brother of one of the real-life crew,
-                bringing a rare insider perspective.
-              </li>
-              <li>
-                Blends the pace of a thriller with the moral weight of true
-                crime.
-              </li>
-              <li>
-                Immerses you in the Painters &amp; Dockers Waterfront War,
-                crooked cops, and a city on the edge.
-              </li>
-              <li>
-                Perfect for readers who like their crime stories dark,
-                authentic, and emotionally honest.
-              </li>
-            </ul>
-
-            <p className="mt-3 text-sm md:text-base text-neutral-300">
-              For readers of George V. Higgins, Andrew Nette,{" "}
-              <em>Underbelly</em>-era true crime, and gritty Australian noir
-              where the line between fact and fiction is razor thin.
-            </p>
+      <section className="py-14">
+        <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-amber-500">The books</p>
+            <h2 className="mt-2 text-3xl font-bold md:text-4xl">The Great Bookie Robbery novels</h2>
           </div>
-
-          {/* CTAs */}
-          <div className="mt-6 flex flex-wrap gap-3">
-            <Link className="btn" href="/crime-novel">
-              The Book
-            </Link>
-            <Link
-              className="btn"
-              href="https://read.amazon.com.au/sample/B0FV1QD25H?clientId=share"
-            >
-              Read Sample
-            </Link>
-            <Link className="btn" href="/great-bookie-robbery">
-              Explore True Crime
-            </Link>
-            <Link className="btn" href="/order">
-              Order
-            </Link>
-          </div>
+          <Link href="/books" className="text-amber-500 underline underline-offset-4 hover:text-amber-400">View both books</Link>
         </div>
 
-        {/* Right panel: About the Author */}
-        <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-5">
-          <h2 className="text-2xl font-bold mb-3">About the Author</h2>
-          <img
-            src="/images/author.jpg"
-            alt="Gregory M Carroll"
-            className="w-48 h-auto rounded-lg mb-4"
-          />
-          <p className="text-sm leading-relaxed">
-            Gregory M. Carroll is not just the author of{" "}
-            <em>11 Minutes</em>&mdash;he lived it. Born and raised in the same
-            tough world as the men in his story, he was more than a witness. He
-            was a brother. Ian Carroll was his brother, his best man, and the
-            man whose body he had to identify. Now retired, he writes from the
-            Gold Coast, Australia, bringing lived experience to the page with
-            sharp insight and unflinching honesty. Just like the lives that
-            shaped it.
+        <div className="grid gap-8 md:grid-cols-2">
+          {books.map((book) => (
+            <article key={book.title} className="grid gap-6 rounded-2xl border border-neutral-800 bg-neutral-900 p-6 sm:grid-cols-[180px,1fr]">
+              <Link href={book.href} className="mx-auto sm:mx-0">
+                <img src={book.image} alt={`${book.title} book cover`} className="w-44 rounded-lg shadow-2xl" />
+              </Link>
+              <div className="flex flex-col">
+                <p className="text-sm font-semibold uppercase tracking-widest text-amber-500">{book.status}</p>
+                <h3 className="mt-2 text-3xl font-extrabold">{book.title}</h3>
+                <p className="mt-1 font-semibold text-neutral-300">{book.subtitle}</p>
+                <p className="mt-4 leading-relaxed text-neutral-300">{book.copy}</p>
+                <Link className="mt-6 inline-flex font-semibold text-amber-500 hover:text-amber-400" href={book.href}>Discover the book →</Link>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="grid gap-8 border-t border-neutral-800 py-14 md:grid-cols-[1fr,280px] md:items-center">
+        <div>
+          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-amber-500">Beyond the novels</p>
+          <h2 className="mt-2 text-3xl font-bold">The crime behind the fiction</h2>
+          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-neutral-300">
+            Read the documented story of the Great Bookie Robbery, the Victoria Club heist, and the Melbourne underworld figures whose lives shaped the novels.
           </p>
+          <Link className="btn mt-6" href="/great-bookie-robbery">Enter the true-crime archive</Link>
+        </div>
+        <div className="rounded-xl border border-neutral-800 bg-neutral-900 p-5">
+          <img src="/images/author.jpg" alt="Australian crime author Gregory M Carroll" className="mb-4 w-full rounded-lg" />
+          <p className="text-sm leading-relaxed text-neutral-300">
+            Gregory M Carroll writes from lived experience, family history, and years of research into Melbourne&apos;s criminal past.
+          </p>
+          <Link href="/about" className="mt-3 inline-block font-semibold text-amber-500">About Gregory →</Link>
         </div>
       </section>
     </>
