@@ -33,54 +33,45 @@ export default function HomePage() {
 
       <section
         aria-labelledby="home-hero-title"
-        className="relative isolate flex min-h-[500px] flex-col justify-start overflow-hidden rounded-2xl bg-[#e9d9aa] px-5 py-6 text-[#102b4f] sm:px-8 md:min-h-[480px] md:px-10 md:py-7"
+        className="relative isolate flex min-h-[640px] flex-col justify-between overflow-hidden rounded-2xl bg-[#e9d9aa] px-5 py-8 text-[#102b4f] sm:px-8 sm:py-10 md:min-h-[610px] md:px-12 md:py-12 lg:min-h-[660px]"
       >
         <div
           aria-hidden="true"
-          className="absolute inset-0 -z-20 bg-cover bg-[position:61%_center] md:bg-[length:90%_auto] md:bg-[position:right_top] md:bg-no-repeat"
+          className="absolute inset-0 -z-20 bg-cover bg-[position:61%_center] md:bg-center"
           style={{ backgroundImage: "url('/images/Clifftop5.png')" }}
         />
         <div
           aria-hidden="true"
           className="absolute inset-0 -z-10 bg-gradient-to-b from-[#fff9e8]/95 via-[#fff9e8]/75 via-[35%] to-transparent to-[65%] md:bg-gradient-to-r md:from-[#fff9e8]/90 md:via-[#fff9e8]/70 md:via-[45%] md:to-transparent md:to-[75%]"
         />
-        <div aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-28 bg-gradient-to-t from-[#071e38]/80 to-transparent" />
+        <div aria-hidden="true" className="absolute inset-x-0 bottom-0 -z-10 h-44 bg-gradient-to-t from-[#071e38]/80 to-transparent" />
 
-        <div className="max-w-[690px]">
-          <h1 id="home-hero-title" className="text-[clamp(2.25rem,5vw,3.5rem)] font-black uppercase leading-[0.98] tracking-tight drop-shadow-[0_1px_2px_rgba(255,255,255,0.75)]">
+        <div className="max-w-[850px]">
+          <h1 id="home-hero-title" className="text-[clamp(2.35rem,7.5vw,5.5rem)] font-black uppercase leading-[0.98] tracking-tight drop-shadow-[0_1px_2px_rgba(255,255,255,0.75)]">
             <span>Coming </span>
             <span className="whitespace-nowrap text-[#bd1020]">13 October</span>
           </h1>
-          <blockquote className="mt-4 max-w-[590px] font-serif text-[clamp(1.3rem,2.3vw,1.65rem)] italic leading-[1.14] md:mt-5">
+          <blockquote className="mt-6 max-w-[720px] font-serif text-[clamp(1.55rem,3.2vw,2.8rem)] italic leading-[1.14] md:mt-8">
             <p>“Wow! That was one wild ride. I genuinely loved it.”</p>
-            <footer className="mt-2 text-[0.7em] not-italic">— Tony Jones, 9News</footer>
+            <footer className="mt-3 text-[0.65em] not-italic md:mt-4">— Tony Jones, 9News</footer>
           </blockquote>
         </div>
 
-        <div className="relative z-10 mt-2 flex w-fit max-w-full flex-col items-center gap-2 md:absolute md:left-[10%] md:top-[41%] md:mt-0">
+        <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-end sm:gap-6">
           <Link
-            href="/books/11-million"
-            aria-label="View 11 Million"
-            className="relative block h-[159px] w-[108px] overflow-hidden transition hover:scale-105 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-white sm:h-[175px] sm:w-[119px] lg:h-[210px] lg:w-[143px]"
-          >
-            <img
-              src="/images/11-million-3d-cover.png"
-              alt="11 Million book cover"
-              className="absolute -top-[35px] left-0 h-auto w-[140px] max-w-none drop-shadow-2xl sm:-top-[38px] sm:w-[154px] lg:-top-[46px] lg:w-[185px]"
-            />
-          </Link>
-          <Link
-            className="inline-flex min-h-11 items-center justify-center rounded-xl bg-[#0c2c50] px-6 py-2 text-base font-extrabold uppercase tracking-wide text-white shadow-xl transition hover:bg-[#16436f] focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-white sm:text-lg"
+            className="inline-flex min-h-14 items-center justify-center rounded-xl bg-[#0c2c50] px-7 py-3 text-lg font-extrabold uppercase tracking-wide text-white shadow-xl transition hover:bg-[#16436f] focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-white sm:text-xl"
             href="/books/11-million"
           >
             Pre-order 11 Million
           </Link>
-
+          <Link className="font-semibold text-white underline underline-offset-4 drop-shadow-md hover:text-amber-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white" href="/great-bookie-robbery">
+            Explore the true story
+          </Link>
         </div>
       </section>
 
-      <section className="py-8 md:py-10">
-        <div className="mb-5 flex flex-wrap items-end justify-between gap-4">
+      <section className="py-14">
+        <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-amber-500">The books</p>
             <h2 className="mt-2 text-3xl font-bold md:text-4xl">The Great Bookie Robbery novels</h2>

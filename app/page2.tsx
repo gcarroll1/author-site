@@ -33,7 +33,7 @@ export default function HomePage() {
 
       <section
         aria-labelledby="home-hero-title"
-        className="relative isolate flex min-h-[500px] flex-col justify-start overflow-hidden rounded-2xl bg-[#e9d9aa] px-5 py-6 text-[#102b4f] sm:px-8 md:min-h-[480px] md:px-10 md:py-7"
+        className="relative isolate flex min-h-[540px] flex-col justify-between overflow-hidden rounded-2xl bg-[#e9d9aa] px-5 py-6 text-[#102b4f] sm:px-8 md:min-h-[480px] md:px-10 md:py-7"
       >
         <div
           aria-hidden="true"
@@ -57,16 +57,16 @@ export default function HomePage() {
           </blockquote>
         </div>
 
-        <div className="relative z-10 mt-2 flex w-fit max-w-full flex-col items-center gap-2 md:absolute md:left-[10%] md:top-[41%] md:mt-0">
+        <div className="relative z-10 flex flex-col items-start gap-2 md:absolute md:left-[10%] md:top-[41%]">
           <Link
             href="/books/11-million"
             aria-label="View 11 Million"
-            className="relative block h-[159px] w-[108px] overflow-hidden transition hover:scale-105 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-white sm:h-[175px] sm:w-[119px] lg:h-[210px] lg:w-[143px]"
+            className="relative block h-[119px] w-[105px] overflow-hidden transition hover:scale-105 focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-white sm:h-[127px] sm:w-[112px] lg:h-[175px] lg:w-[154px]"
           >
             <img
               src="/images/11-million-3d-cover.png"
               alt="11 Million book cover"
-              className="absolute -top-[35px] left-0 h-auto w-[140px] max-w-none drop-shadow-2xl sm:-top-[38px] sm:w-[154px] lg:-top-[46px] lg:w-[185px]"
+              className="absolute -top-[26px] left-0 h-auto w-full drop-shadow-2xl sm:-top-[28px] lg:-top-[38px]"
             />
           </Link>
           <Link
