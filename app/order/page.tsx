@@ -3,7 +3,7 @@
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 import Link from "next/link";
-import ProofStrip from "@/components/ProofStrip";
+import ProofStrip2 from "@/components/ProofStrip2";
 
 export const metadata = {
   title: "Order | 11 Minutes",
@@ -21,7 +21,7 @@ export default function Page() {
     <>
       <article className="prose prose-invert max-w-none">
       {/* NEW AMAZON HOT NEW RELEASES IMAGE */}
-      <ProofStrip />
+      <ProofStrip2 />
       <div className="relative flex items-center gap-4">
         <img
           src="/images/book-cover.jpg"
@@ -67,11 +67,11 @@ export default function Page() {
                     Amazon – Paperback
                   </h3>
                   <p className="text-xs text-neutral-300">
-                    Order the Australian paperback edition from Amazon (local printer).
+                    Order the Australian paperback or Kindle from Amazon (local printer).
                   </p>
                 </div>
                 <Link
-                  href="https://www.amazon.com.au/11-MINUTES-Melbournes-Bookie-Robbery/dp/1764222636"
+                  href="https://www.amazon.com.au/dp/B0H9JMGK1K?binding=paperback&ref=dbs_dp_rwt_sb_pc_tpbk"
                   target="_blank"
                   rel="noopener noreferrer"
                   prefetch={false}
@@ -98,7 +98,7 @@ export default function Page() {
                   </p>
                 </div>
                 <Link
-                  href="https://www.fishpond.com.au/Books/11-Minutes-Gregory-M-Carroll/9781764222600"
+                  href="https://www.fishpond.com.au/c/Books/a/Gregory+M.+Carroll"
                   target="_blank"
                   rel="noopener noreferrer"
                   prefetch={false}
@@ -125,7 +125,7 @@ export default function Page() {
                   </p>
                 </div>
                 <Link
-                  href="https://www.booktopia.com.au/11-minutes-gregory-m-carroll/book/9781764222600.html"
+                  href="https://www.booktopia.com.au/search?author=Gregory%20M%20Carroll"
                   target="_blank"
                   rel="noopener noreferrer"
                   prefetch={false}
@@ -165,21 +165,21 @@ export default function Page() {
               {/* Amazon AU – Ebook */}
               <div className="not-prose flex items-center gap-4 bg-neutral-900 border border-neutral-800 rounded-xl p-4">
                 <img
-                  src="/images/stores/amazon.png"
-                  alt="Amazon Australia"
+                  src="/images/stores/kobo.png"
+                  alt="Kobo.com"
                   className="w-20 h-auto rounded-sm hidden sm:block"
                   loading="lazy"
                 />
                 <div className="flex-1">
                   <h3 className="font-semibold text-base">
-                    Amazon Australia – Kindle
+                    Kobo Australia – ebook
                   </h3>
                   <p className="text-xs text-neutral-300">
-                    Find the Kindle edition on Amazon Australia.
+                    Free on Kobo Plus (subscription).
                   </p>
                 </div>
                 <Link
-                  href="https://www.amazon.com.au/s?k=11+Minutes+Gregory+M+Carroll"
+                  href="https://www.kobo.com/au/en/series/eleven-1"
                   target="_blank"
                   rel="noopener noreferrer"
                   prefetch={false}

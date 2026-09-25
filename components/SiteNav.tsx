@@ -5,12 +5,8 @@ import { usePathname } from "next/navigation";
 import type { Route } from "next";
 
 const items = [
-  { href: "/", label: "Home" },
   { href: "/books", label: "Books" },
-  { href: "/books/11-million", label: "11 Million" },
-  { href: "/books/11-minutes", label: "11 Minutes" },
   { href: "/great-bookie-robbery", label: "True Crime" },
-  { href: "/event", label: "50 Anniversary" },
   { href: "/about", label: "About" },
   { href: "/order", label: "Order" },
   { href: "/reviews", label: "Reviews" },

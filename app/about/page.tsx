@@ -3,13 +3,12 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
-import TopBanner from "@/components/TopBanner";
-
+import BookBanner from "@/components/BookBanner";
 
 export const metadata = {
   title: "Author — Gregory M Carroll | 11 Minutes",
   description:
-    "About Gregory M Carroll, author of 11 Minutes — an Australian noir crime novel inspired by Melbourne’s 1976 Great Bookie Robbery.",
+    "About Gregory M Carroll: author of 11 Minutes, Australian noir crime novel inspired by Melbourne’s 1976 Great Bookie Robbery.",
 };
 
 export default function Page() {
@@ -25,7 +24,7 @@ export default function Page() {
     jobTitle: "Author",
     nationality: "Australian",
     description:
-      "Author of 11 Minutes, an Australian noir crime novel inspired by Melbourne’s 1976 Great Bookie Robbery.",
+      "Author of 11 Minutes, an Australian noir crime novel inspired by the 1976 Great Bookie Robbery.",
   };
 
   return (
@@ -35,204 +34,167 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personLd) }}
       />
-
       {/* SEO: Breadcrumb JSON-LD */}
       <BreadcrumbJsonLd items={crumbs} />
 
       {/* Visible breadcrumbs */}
       <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Author" }]} />
 
-      {/* Book banner */}
-      <TopBanner />
+      {/* Two-column layout (image left, text right) */}
+      <div className="max-w-[1000px] mx-auto p-6 grid md:grid-cols-[320px,minmax(0,1fr)] gap-8 items-start">
+        {/* LEFT: Author image and podcast interviews */}
+        <div className="flex flex-col items-center md:items-start gap-6 self-start">
+          <img
+            src="/images/author.jpg"
+            alt="Gregory M Carroll"
+            className="w-56 h-auto mx-auto rounded-lg shadow-lg"
+            loading="lazy"
+          />
+          <article className="w-full rounded-xl border border-neutral-700 bg-black/30 p-5 flex flex-col">
+            <p className="text-xs tracking-[0.22em] uppercase text-orange-300 mb-2">Podcast interview</p>
+            <h4 className="text-xl font-bold text-white mb-2">Andrew Rule — Life and Crimes</h4>
+            <p className="text-sm text-neutral-200 flex-1">
+              A two-part interview unpacking the robbery, the men behind it, and the lived history that shaped <span className="italic">11 Minutes</span>.
+            </p>
+            <div className="mt-4 grid grid-cols-1 gap-2">
+              <a href="https://podcasts.apple.com/au/podcast/the-bookie-robbers-brother-part-1/id1260800644?i=1000745494694" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-lg border border-orange-400/70 px-4 py-2 text-sm font-semibold text-orange-200 hover:bg-orange-500/10 transition">Part 1 — Apple Podcasts</a>
+              <a href="https://open.spotify.com/episode/76Jeao9SKYXjrHsRJWOMXe" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-lg border border-neutral-500 px-4 py-2 text-sm font-semibold text-neutral-100 hover:bg-white/10 transition">Part 1 — Spotify</a>
+              <a href="https://podcasts.apple.com/au/podcast/the-bookie-robbers-brother-part-2/id1260800644?i=1000746399694" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-lg border border-orange-400/70 px-4 py-2 text-sm font-semibold text-orange-200 hover:bg-orange-500/10 transition">Part 2 — Apple Podcasts</a>
+              <a href="https://open.spotify.com/episode/1RIyS8TQgOY4K6J8Jvx4CM" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-lg border border-neutral-500 px-4 py-2 text-sm font-semibold text-neutral-100 hover:bg-white/10 transition">Part 2 — Spotify</a>
+            </div>
+          </article>
+        </div>
 
-      <main className="max-w-6xl mx-auto px-4 py-8 space-y-12">
-        {/* PAGE TITLE */}
-        <header>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-orange-500 mb-3">
-            Gregory M Carroll
-          </h1>
-          <p className="text-lg md:text-xl text-neutral-300">
-            Author of <em>11 Minutes</em>
-          </p>
-        </header>
+        {/* RIGHT: Content panels */}
+        <div className="min-w-0 flex flex-col space-y-8">
+          {/* Panel 1: Author’s Connection */}
+          <section className="bg-neutral-900 border border-neutral-800 rounded-xl p-6">
+            <h2 className="text-2xl font-bold tracking-widest mb-4">
+              AUTHOR&rsquo;S CONNECTION TO 11 MINUTES
+            </h2>
+            <div className="prose prose-invert max-w-none">
+              <p>
+                Gregory M. Carroll is not just the author of <em>11 Minutes</em>&mdash;he
+                lived it. Born and raised in the same tough world as the men in his
+                story, he was more than a witness. He was a brother. Ian Carroll was his
+                blood, his best man, and the man whose body he had to identify.
+              </p>
+              <p>
+                This book is not true crime. It&rsquo;s something deeper. Facts tell you
+                what happened. A novel lets you feel it. <em>11 Minutes</em> reaches past
+                police reports and courtrooms, into the quiet fears, the slow
+                unraveling of loyalty, and the weight of choices made in the dark. It
+                tells you not just what people did&mdash;but why.
+              </p>
+              <p>
+                Greg escaped that world the hard way. Night school. Long hours. He broke
+                into the early days of computing, and went on to build two global tech
+                companies. Along the way, he earned a Master&rsquo;s in Artificial
+                Intelligence and authored two award-winning books on risk and AI&mdash;
+                <em>21st Century Enterprise Risk Management</em> and <em>Risk
+                Intelligence</em>, the latter a quarterfinalist for the Booklife Prize.
+                Now retired, he writes from the Gold Coast, Australia, bringing lived
+                experience to the page with sharp insight and unflinching honesty. Just
+                like the life that shaped it.
+              </p>
+            </div>
+          </section>
 
-        {/* MAIN AUTHOR SECTION */}
-        <section className="grid gap-10 lg:grid-cols-[minmax(0,280px),minmax(0,1fr)] items-start">
-          {/* LEFT: AUTHOR PHOTO */}
-          <div className="flex justify-center lg:justify-start">
-            <img
-              src="/images/author.jpg"
-              alt="Gregory M Carroll"
-              className="w-56 sm:w-64 lg:w-72 max-w-full h-auto rounded-lg shadow-lg"
-              loading="lazy"
-            />
+          {/* Panel 2: More About the Author */}
+          <section className="bg-neutral-900 border border-neutral-800 rounded-xl p-6">
+            <h2 className="text-2xl font-bold mb-4">MORE ABOUT THE AUTHOR</h2>
+            <div className="prose prose-invert max-w-none">
+              <p>
+                As an author and speaker, I have been sharing my expertise on the
+                practical application of AI in risk management and business
+                transformation for over five years. My book <em>Risk Intelligence</em>{" "}
+                was a quarter finalist of the international Booklife Prize. I also
+                developed an advanced PR3 RAG LLM for user query and analysis of
+                airworthiness reports and regulations for the Australian Dept of Defence.
+              </p>
+              <p>
+                With over 19 years of experience as a solutions architect at Fast Track
+                (Aust) Pty Ltd, I led the development of an AI-based Governance, Risk &
+                Compliance software package that was implemented at over 300 organizations
+                across Australia. I also co-founded and developed a Transport Logistics
+                software package sold to Linfox, TNT and BP Malaysia, making CMS Transport
+                Systems the market leader in Australia. I hold a Master&apos;s degree in
+                Artificial Intelligence from Torrens University Australia, a Certificate
+                of Machine Learning from Stanford University, and a Grad Dip in Computer
+                Simulation from Swinburne University of Technology. I am passionate about
+                applying AI to solve complex problems and create value for businesses and
+                society.
+              </p>
+            </div>
+          </section>
+
+          {/* Panel 3: Business Books */}
+          <section className="bg-neutral-900 border border-neutral-800 rounded-xl p-6">
+            <h2 className="text-2xl font-bold mb-5">
+              BUSINESS BOOKS BY GREGORY M CARROLL
+            </h2>
+
+            <div className="grid grid-cols-1 gap-6">
+              {/* Book 1 */}
+              <div className="flex gap-4 items-start border border-neutral-800 rounded-lg p-4">
+                <img
+                  src="/images/Risk%20Intelligence.jpg"
+                  alt="Risk Intelligence"
+                  className="w-28 h-auto rounded-md shadow"
+                  loading="lazy"
+                />
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg">Risk Intelligence</h3>
+                  <p className="text-sm text-neutral-300 mb-3">
+                    Booklife Prize quarterfinalist.
+                  </p>
+                  <a
+                    className="btn"
+                    href="https://store.bookbaby.com/book/risk-intelligence"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View at BookBaby
+                  </a>
+                </div>
+              </div>
+
+              {/* Book 2 */}
+              <div className="flex gap-4 items-start border border-neutral-800 rounded-lg p-4">
+                <img
+                  src="/images/Mastering%2021st%20Century%20Enterprise%20Risk%20Management.jpg"
+                  alt="Mastering 21st Century Enterprise Risk Management"
+                  className="w-28 h-auto rounded-md shadow"
+                  loading="lazy"
+                />
+                <div className="flex-1">
+                  <h3 className="font-semibold text-lg">
+                    Mastering 21st Century Enterprise Risk Management
+                  </h3>
+                  <a
+                    className="btn mt-3"
+                    href="https://store.bookbaby.com/bookshop/book?bookURL=Mastering-21st-Century-Enterprise-Risk-Management-2nd-Edition"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View at BookBaby
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* CTA */}
+          <div className="flex flex-wrap gap-3">
+            <Link className="btn" href="/contact">
+              Contact
+            </Link>
+            <Link className="btn" href="/crime-novel">
+              Read about the Crime Novel
+            </Link>
           </div>
-
-          {/* RIGHT: STORY PANELS */}
-          <div className="space-y-10">
-            {/* Panel 1: Why this book */}
-            <section className="bg-neutral-900 border border-neutral-800 rounded-xl p-6">
-              <h2 className="text-sm md:text-base font-semibold tracking-[0.25em] mb-4 uppercase">
-                Why I Wrote 11 Minutes
-              </h2>
-
-              <div className="prose prose-invert max-w-none text-sm md:text-base">
-                <p>
-                  I am not just the author of <em>11 Minutes</em>. I lived in the
-                  shadow of the men who carried out Melbourne’s 1976 Great Bookie
-                  Robbery. I grew up in the same hard world. I knew the people.
-                  I saw what the violence, the money, and the silence did to
-                  families.
-                </p>
-
-                <p>
-                  Ian Carroll was my brother. He was my best man — and later, I
-                  was the one who identified his body. That experience never
-                  leaves you. It doesn’t fade into history. It stays close.
-                </p>
-
-                <p>
-                  This novel exists because the public story of the robbery
-                  ends at the heist. The real story begins after — when paranoia
-                  replaces loyalty, when greed fractures friendships, and when
-                  the consequences arrive quietly, one by one.
-                </p>
-              </div>
-            </section>
-
-            {/* Panel 2: What kind of book this is */}
-            <section className="bg-neutral-900 border border-neutral-800 rounded-xl p-6">
-              <h2 className="text-lg md:text-xl font-bold mb-4">
-                What This Story Is — and Isn’t
-              </h2>
-
-              <div className="prose prose-invert max-w-none text-sm md:text-base">
-                <p>
-                  <em>11 Minutes</em> is not straight true crime. Facts can tell
-                  you what happened — dates, names, headlines. A novel can take
-                  you somewhere else entirely.
-                </p>
-
-                <p>
-                  This book reaches past police reports and courtrooms into the
-                  quiet moments: the fear that doesn’t make the papers, the
-                  slow unravelling of trust, the weight of choices made when no
-                  one is watching.
-                </p>
-
-                <p>
-                  I wrote this story to explore not just the crime, but the
-                  cost. What destroys criminal empires is rarely the police.
-                  It’s what happens inside — ambition, silence, loyalty turned
-                  brittle.
-                </p>
-              </div>
-            </section>
-
-            {/* Panel 3: Life beyond the crime world */}
-            <section className="bg-neutral-900 border border-neutral-800 rounded-xl p-6">
-              <h2 className="text-lg md:text-xl font-bold mb-4">
-                Life Beyond the Story
-              </h2>
-
-              <div className="prose prose-invert max-w-none text-sm md:text-base">
-                <p>
-                  Escaping that world took work. Night school. Long hours.
-                  Distance. I moved into the early days of computing and
-                  eventually built two global technology companies.
-                </p>
-
-                <p>
-                  I later earned a Master’s degree in Artificial Intelligence
-                  and wrote two award-recognised business books —
-                  <em>21st Century Enterprise Risk Management</em> and{" "}
-                  <em>Risk Intelligence</em>, the latter a quarter-finalist for
-                  the international BookLife Prize.
-                </p>
-
-                <p>
-                  That background shaped how I approached <em>11 Minutes</em>.
-                  I am interested in systems — how organisations fail, how
-                  pressure exposes weak points, and how risk compounds over
-                  time. Criminal crews are no different.
-                </p>
-
-                <p>
-                  I now write from the Gold Coast, Australia, bringing lived
-                  experience, discipline, and clarity to stories rooted in
-                  real consequences.
-                </p>
-              </div>
-            </section>
-          </div>
-        </section>
-
-        {/* BUSINESS BOOKS */}
-        <section className="bg-neutral-900 border border-neutral-800 rounded-xl p-6">
-          <h2 className="text-xl md:text-2xl font-bold mb-5">
-            Other Books by Gregory M Carroll
-          </h2>
-
-          <div className="grid gap-6 md:grid-cols-2">
-            <article className="flex gap-4 items-start border border-neutral-800 rounded-lg p-4">
-              <img
-                src="/images/Risk%20Intelligence.jpg"
-                alt="Risk Intelligence"
-                className="w-24 sm:w-28 h-auto rounded-md shadow"
-                loading="lazy"
-              />
-              <div>
-                <h3 className="font-semibold text-base md:text-lg">
-                  Risk Intelligence
-                </h3>
-                <p className="text-xs md:text-sm text-neutral-300 mb-3">
-                  BookLife Prize quarter-finalist.
-                </p>
-                <a
-                  className="btn"
-                  href="https://store.bookbaby.com/book/risk-intelligence"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View at BookBaby
-                </a>
-              </div>
-            </article>
-
-            <article className="flex gap-4 items-start border border-neutral-800 rounded-lg p-4">
-              <img
-                src="/images/Mastering%2021st%20Century%20Enterprise%20Risk%20Management.jpg"
-                alt="Mastering 21st Century Enterprise Risk Management"
-                className="w-24 sm:w-28 h-auto rounded-md shadow"
-                loading="lazy"
-              />
-              <div>
-                <h3 className="font-semibold text-base md:text-lg">
-                  Mastering 21st Century Enterprise Risk Management
-                </h3>
-                <a
-                  className="btn mt-3"
-                  href="https://store.bookbaby.com/bookshop/book?bookURL=Mastering-21st-Century-Enterprise-Risk-Management-2nd-Edition"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View at BookBaby
-                </a>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="flex flex-wrap gap-3">
-          <Link className="btn" href="/crime-novel">
-            Read about 11 Minutes
-          </Link>
-          <Link className="btn" href="/contact">
-            Contact
-          </Link>
-        </section>
-      </main>
+        </div>
+      </div>
     </>
   );
 }

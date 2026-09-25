@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
-import ProofStrip from "@/components/ProofStrip";
+import ProofStrip2 from "@/components/ProofStrip2";
 
 export const metadata = {
   title: "Book Reviews | Gregory M Carroll",
@@ -83,7 +83,7 @@ export default function Page() {
       />
 
       <article className="prose prose-invert max-w-none">
-        <ProofStrip />
+        <ProofStrip2 />
         {/* HERO */}
         <div className="text-center mb-10">
           {/* AMAZON HOT NEW RELEASES IMAGE */}
