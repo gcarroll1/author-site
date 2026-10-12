@@ -28,8 +28,8 @@ export default function ElevenMillionPage() {
     image: "https://gregorymcarroll.com/images/books/11-million-cover.png",
     datePublished: "2026-10-13",
     offers: [
-      { "@type": "Offer", availability: "https://schema.org/PreOrder", url: AMAZON },
-      { "@type": "Offer", availability: "https://schema.org/PreOrder", url: APPLE },
+      { "@type": "Offer", availability: "https://schema.org/InStock", url: AMAZON },
+      { "@type": "Offer", availability: "https://schema.org/InStock", url: APPLE },
     ],
   };
 
@@ -46,15 +46,16 @@ export default function ElevenMillionPage() {
         <aside className="lg:sticky lg:top-24">
           <img src="/images/books/11-million-cover.png" alt="11 Million — The Great Bookie Robbery Money cover" className="mx-auto w-full max-w-sm rounded-lg shadow-2xl" />
           <div className="mt-6 grid gap-3">
-            <a className="btn w-full" href={AMAZON} target="_blank" rel="noopener noreferrer">Pre-order on Amazon Australia</a>
-            <a className="btn-secondary w-full" href={APPLE} target="_blank" rel="noopener noreferrer">Pre-order on Apple Books</a>
+            <a className="btn w-full" href={AMAZON} target="_blank" rel="noopener noreferrer">Buy on Amazon Australia</a>
+            <a className="btn-secondary w-full" href={APPLE} target="_blank" rel="noopener noreferrer">Buy on Apple Books</a>
+            <Link className="btn-secondary w-full text-center" href="/order">More retailers · Both Eleven novels</Link>
             <a className="btn-secondary w-full" href={GOODREADS} target="_blank" rel="noopener noreferrer">Add or review on Goodreads</a>
           </div>
-          <p className="mt-4 text-center text-sm text-neutral-400">Publishing 13 October 2026</p>
+          <p className="mt-4 text-center text-sm text-neutral-400">Published 13 October 2026 · Paperback and ebook</p>
         </aside>
 
         <main>
-          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-amber-500">Available for pre-order</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-amber-500">New release · Available now</p>
           <h1 className="mt-2 text-5xl font-extrabold md:text-7xl">11 Million</h1>
           <h2 className="mt-2 text-2xl font-bold text-neutral-300 md:text-3xl">The Great Bookie Robbery Money</h2>
           <p className="mt-6 text-2xl font-bold leading-snug">Millions vanished in eleven minutes.</p>
@@ -79,8 +80,9 @@ export default function ElevenMillionPage() {
               This is not true crime. It is crime fiction shaped by public events, underworld rumour, family history, and the unresolved legacy of Melbourne&apos;s 1976 Victoria Club robbery. Written for readers of Australian noir, historical crime fiction, underworld thrillers, and international conspiracy novels.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a className="btn" href={AMAZON} target="_blank" rel="noopener noreferrer">Amazon pre-order</a>
-              <a className="btn-secondary" href={APPLE} target="_blank" rel="noopener noreferrer">Apple Books pre-order</a>
+              <a className="btn" href={AMAZON} target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+              <a className="btn-secondary" href={APPLE} target="_blank" rel="noopener noreferrer">Buy on Apple Books</a>
+              <Link className="btn-secondary" href="/order">All retailers · Both novels</Link>
               <a className="btn-secondary" href={GOODREADS} target="_blank" rel="noopener noreferrer">Add a Goodreads review</a>
               <Link className="btn-secondary" href="/great-bookie-robbery">Read the true-crime background</Link>
             </div>

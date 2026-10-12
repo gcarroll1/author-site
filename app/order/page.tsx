@@ -6,9 +6,9 @@ import Link from "next/link";
 import ProofStrip2 from "@/components/ProofStrip2";
 
 export const metadata = {
-  title: "Order | 11 Minutes",
+  title: "Buy 11 Million and 11 Minutes | The Eleven Series",
   description:
-    "Order 11 Minutes in Australia or internationally, and leave a review.",
+    "Buy 11 Million and 11 Minutes in paperback or ebook from Australian and international retailers.",
 };
 
 export default function Page() {
@@ -24,8 +24,8 @@ export default function Page() {
       <ProofStrip2 />
       <div className="relative flex items-center gap-4">
         <img
-          src="/images/book-cover.jpg"
-          alt="11 Minutes A Crime Novel of Melbourne's 1976 Great Bookie Robbery - book cover"
+          src="/images/books/11-million-cover.png"
+          alt="11 Million — The Great Bookie Robbery Money book cover"
           className="w-[100px] h-auto rounded-md shadow"
           width={100}
           height={150}
@@ -33,13 +33,10 @@ export default function Page() {
         />
 	<div>
         <h1 className="text-4xl font-extrabold text-orange-500 mb-4">
-          Order 11 Minutes
+          Buy the Eleven Series
         </h1>
         <p className="text-neutral-300 mb-8">
-          Find your preferred store below to order{" "}
-          <em>11 Minutes – A Crime Novel of Melbourne&apos;s 1976 Great Bookie
-          Robbery</em> in Australia or internationally. You can also leave a
-          review once you&apos;ve read the book.
+          <em>11 Million</em> is out now, alongside <em>11 Minutes</em>. Choose your preferred retailer below to explore the Eleven series in paperback or ebook. Retailer listings and formats vary by region.
         </p>
         </div>
       </div>
@@ -49,8 +46,7 @@ export default function Page() {
           <section>
             <h2 className="text-2xl font-semibold mb-3">In Australia</h2>
             <p className="text-neutral-300 mb-4 text-sm">
-              Australian readers can order the paperback from local booksellers
-              or the ebook from major platforms.
+              Browse paperback and ebook editions of the Eleven novels through the retailers below.
             </p>
 
             <div className="space-y-4">
@@ -64,10 +60,10 @@ export default function Page() {
                 />
                 <div className="flex-1">
                   <h3 className="font-semibold text-base">
-                    Amazon – Paperback
+                    Amazon Australia – Eleven series
                   </h3>
                   <p className="text-xs text-neutral-300">
-                    Order the Australian paperback or Kindle from Amazon (local printer).
+                    Explore available paperback and Kindle editions of both novels.
                   </p>
                 </div>
                 <Link
@@ -152,7 +148,7 @@ export default function Page() {
                   </p>
                 </div>
                 <Link
-                  href="https://books.apple.com/au/book/11-minutes/id6755410297"
+                  href="https://books.apple.com/au/author/gregory-m-carroll/id824334040"
                   target="_blank"
                   rel="noopener noreferrer"
                   prefetch={false}
@@ -276,7 +272,7 @@ export default function Page() {
                   </p>
                 </div>
                 <Link
-                  href="https://www.amazon.com/11-Minutes-Melbournes-Bookie-Robbery/dp/1764222601"
+                  href="https://www.amazon.com/dp/B0H9JMGK1K?binding=paperback&ref=dbs_dp_rwt_sb_pc_tpbk"
                   target="_blank"
                   rel="noopener noreferrer"
                   prefetch={false}
@@ -301,7 +297,7 @@ export default function Page() {
                   </p>
                 </div>
                 <Link
-                  href="https://www.amazon.co.uk/11-MINUTES-Melbournes-Bookie-Robbery/dp/1764222636"
+                  href="https://www.amazon.co.uk/dp/B0H9JMGK1K?binding=paperback&ref=dbs_dp_rwt_sb_pc_tpbk"
                   target="_blank"
                   rel="noopener noreferrer"
                   prefetch={false}

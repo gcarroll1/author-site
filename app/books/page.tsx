@@ -17,7 +17,7 @@ export default function BooksPage() {
       </header>
 
       <div className="mt-12 grid gap-10 md:grid-cols-2">
-        <BookPanel title="11 Million" subtitle="The Great Bookie Robbery Money" image="/images/books/11-million-cover.png" href="/books/11-million" label="Pre-order now">
+        <BookPanel title="11 Million" subtitle="The Great Bookie Robbery Money" image="/images/books/11-million-cover.png" href="/books/11-million" label="New release · Available now">
           An international Australian crime thriller moving from Melbourne to Manila, Hong Kong, Greece, and the shadow world of Cold War finance.
         </BookPanel>
         <BookPanel title="11 Minutes" subtitle="A Crime Novel of Melbourne's 1976 Great Bookie Robbery" image="/images/11_Minutes_ebook_cover_4w.jpg" href="/books/11-minutes" label="Available now">

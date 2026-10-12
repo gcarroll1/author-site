@@ -9,7 +9,7 @@ export default function ProofStrip2() {
       <div className="grid gap-4 md:grid-cols-2">
         {/* Silvester */}
         <div className="rounded-xl border border-[#c4b094]/40 bg-black/40 p-5 text-center">
-          <p className="text-[10px] uppercase tracking-[0.2em] text-[#c4b094]">
+          <p className="text-2xl uppercase tracking-[0.2em] font-semibold text-[#c4b094]">
             11 MINUTES
           </p>
 
@@ -43,7 +43,7 @@ export default function ProofStrip2() {
 
         {/* Star rating */}
         <div className="rounded-xl border border-[#c4b094]/40 bg-black/40 p-5 text-center">
-          <p className="text-[10px] uppercase tracking-[0.2em] text-[#c4b094]">
+          <p className="text-2xl uppercase tracking-[0.2em] font-semibold text-[#c4b094]">
             11 MILLION
           </p>
 

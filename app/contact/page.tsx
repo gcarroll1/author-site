@@ -9,12 +9,12 @@ const sampleLinks = [
   {
     title: "11 Minutes",
     description: "Start with the crime novel inspired by Melbourne’s Great Bookie Robbery.",
-    href: "https://gregory-m-carroll.author-pages.com/landers/book-sample-11-minutes",
+    href: "https://gregory-m-carroll.author-pages.com/mailing-list",
   },
   {
     title: "11 Million",
     description: "Follow the missing money across continents in the next book.",
-    href: "https://gregory-m-carroll.author-pages.com/landers/book-sample-11-million-the-great-bookie-robbery-money-eleven-book-2",
+    href: "https://gregory-m-carroll.author-pages.com/mailing-list",
   },
 ];
 
@@ -41,7 +41,7 @@ export default function Page() {
       </section>
 
       <section aria-labelledby="samples-heading">
-        <h2 id="samples-heading" className="text-2xl font-bold text-white">Read a free sample</h2>
+        <h2 id="samples-heading" className="text-2xl font-bold text-white">Join my Mailing List & Read a free sample</h2>
         <p className="mt-2 text-neutral-300">
           Get the first two chapters of either book. Both sample pages subscribe you to the same mailing list.
         </p>

@@ -13,7 +13,7 @@ const books = [
     subtitle: "The Great Bookie Robbery Money",
     image: "/images/books/11-million-cover.png",
     href: "/books/11-million",
-    status: "Pre-order now",
+    status: "New release · Available now",
     copy: "The robbery lasted eleven minutes. The missing fortune has been killing men ever since.",
   },
   {
@@ -48,8 +48,8 @@ export default function HomePage() {
 
         <div className="max-w-[690px]">
           <h1 id="home-hero-title" className="text-[clamp(2.25rem,5vw,3.5rem)] font-black uppercase leading-[0.98] tracking-tight drop-shadow-[0_1px_2px_rgba(255,255,255,0.75)]">
-            <span>Coming </span>
-            <span className="whitespace-nowrap text-[#bd1020]">13 October</span>
+            <span>11 Million </span>
+            <span className="whitespace-nowrap text-[#bd1020]">Out Now</span>
           </h1>
           <blockquote className="mt-4 max-w-[590px] font-serif text-[clamp(1.3rem,2.3vw,1.65rem)] italic leading-[1.14] md:mt-5">
             <p>“Wow! That was one wild ride. I genuinely loved it.”</p>
@@ -73,7 +73,7 @@ export default function HomePage() {
             className="inline-flex min-h-11 items-center justify-center rounded-xl bg-[#0c2c50] px-6 py-2 text-base font-extrabold uppercase tracking-wide text-white shadow-xl transition hover:bg-[#16436f] focus-visible:outline focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-white sm:text-lg"
             href="/books/11-million"
           >
-            Pre-order 11 Million
+            Explore 11 Million
           </Link>
 
         </div>
@@ -85,7 +85,7 @@ export default function HomePage() {
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-amber-500">The books</p>
             <h2 className="mt-2 text-3xl font-bold md:text-4xl">The Great Bookie Robbery novels</h2>
           </div>
-          <Link href="/books" className="text-amber-500 underline underline-offset-4 hover:text-amber-400">View both books</Link>
+          <Link href="/order" className="text-amber-500 underline underline-offset-4 hover:text-amber-400">Buy either book →</Link>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2">

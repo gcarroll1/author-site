@@ -34,10 +34,10 @@ export default function BookJsonLd() {
           offers: [
             {
               "@type": "Offer",
-              url: "https://gregorymcarroll.com/order/preorder",
+              url: "https://gregorymcarroll.com/order",
               priceCurrency: "AUD",
               price: "29.99",
-              availability: "https://schema.org/PreOrder",
+              availability: "https://schema.org/InStock",
               itemCondition: "https://schema.org/NewCondition",
               seller: {
                 "@type": "Organization",
@@ -53,7 +53,7 @@ export default function BookJsonLd() {
               isbn: "978-1-7642226-0-0",
               bookFormat: "https://schema.org/Paperback",
               publisher: "IngramSpark",
-              url: "https://gregorymcarroll.com/order/preorder",
+              url: "https://gregorymcarroll.com/order",
             },
             {
               "@type": "Book",
@@ -61,7 +61,7 @@ export default function BookJsonLd() {
               isbn: "978-1-7642226-1-7",
               bookFormat: "https://schema.org/EBook",
               publisher: "IngramSpark",
-              url: "https://gregorymcarroll.com/order/preorder",
+              url: "https://gregorymcarroll.com/order",
             },
             {
               "@type": "Book",
